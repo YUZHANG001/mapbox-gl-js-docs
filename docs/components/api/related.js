@@ -7,7 +7,7 @@ export default class Related extends React.Component {
         const { section, md } = this.props;
         return (
             <React.Fragment>
-                <Title>Related</Title>
+                <Title section={section}>Related</Title>
                 <ul>
                     {section.sees.map((see, i) => (
                         <li key={i}>{md(see, true)}</li>

@@ -4,4 +4,8 @@ description: Set the map's access token, test whether the browser support Mapbox
 contentType: API
 language:
     - JavaScript
+prependJs:
+    - "import ApiPageItems from '../../components/api/api-page-items.js';"
 ---
+
+{{<ApiPageItems pageTitle={this.props.frontMatter.title} location={this.props.location} />}}

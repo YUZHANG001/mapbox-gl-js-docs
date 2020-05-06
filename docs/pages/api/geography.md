@@ -4,4 +4,8 @@ description: LngLat and LngLatBounds represent points and rectangles in geograph
 contentType: API
 language:
     - JavaScript
+prependJs:
+    - "import ApiPageItems from '../../components/api/api-page-items.js';"
 ---
+
+{{<ApiPageItems pageTitle={this.props.frontMatter.title} location={this.props.location} />}}

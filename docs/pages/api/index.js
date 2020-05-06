@@ -14,44 +14,6 @@ import { version } from '../../../mapbox-gl-js/package.json';
 import docs from '../../components/api.json';
 import ApiItem from '../../components/api/item';
 import DrUiNote from '@mapbox/dr-ui/note';
-import formatters from '../../util/formatters';
-
-function md(ast, inline) {
-    if (
-        inline &&
-        ast &&
-        ast.children.length &&
-        ast.children[0].type === 'paragraph'
-    ) {
-        ast = {
-            type: 'root',
-            children: ast.children[0].children.concat(ast.children.slice(1))
-        };
-    }
-    return (
-        <span dangerouslySetInnerHTML={{ __html: formatters.markdown(ast) }} /> // eslint-disable-line
-    );
-}
-
-class Note extends React.Component {
-    render() {
-        const note = this.props;
-        return (
-            <div className="">
-                <section className="mb24 prose">
-                    <h2 id={note.namespace.toLowerCase()} className="txt-bold">
-                        {note.name}
-                    </h2>
-                    {note.description && (
-                        <div className="color-gray txt-l">
-                            {md(note.description)}
-                        </div>
-                    )}
-                </section>
-            </div>
-        );
-    }
-}
 
 export default class Api extends React.Component {
     render() {
@@ -104,29 +66,31 @@ export default class Api extends React.Component {
                         </p>
                     </DrUiNote>
                     <div className="api-section">
-                        {docs.map((doc, i) =>
-                            doc.kind === 'note' ? (
-                                <Note key={i} {...doc} />
-                            ) : (
-                                <ApiItem
-                                    location={this.props.location}
-                                    key={i}
-                                    {...doc}
-                                />
-                            )
-                        )}
+                        {/* to break into pages, we should be able to filter this `doc` on doc.name === page.title (for each individual page */}
+                        {docs.map(doc => {
+                            // each page's content is stashed in `members.static` for some reason....
+
+                            const children = doc.members.static;
+                            return (
+                                <section key={doc.name} className="mb24 prose">
+                                    {children.map(child => {
+                                        return (
+                                            <ApiItem
+                                                location={this.props.location}
+                                                key={child.name}
+                                                {...child}
+                                            />
+                                        );
+                                    })}
+                                </section>
+                            );
+                        })}
                     </div>
                 </div>
             </PageShell>
         );
     }
 }
-
-Note.propTypes = {
-    namespace: PropTypes.string,
-    name: PropTypes.string,
-    description: PropTypes.object
-};
 
 Api.propTypes = {
     location: PropTypes.object

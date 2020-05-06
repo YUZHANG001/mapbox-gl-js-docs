@@ -7,7 +7,7 @@ export default class Properties extends React.Component {
         const { section, formatType, md } = this.props;
         return (
             <React.Fragment>
-                <Title>Properties</Title>
+                <Title section={section}>Properties</Title>
                 <React.Fragment>
                     {section.properties.map((property, i) => (
                         <div key={i} className="mb6">

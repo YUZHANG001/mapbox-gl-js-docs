@@ -7,7 +7,7 @@ export default class Parameters extends React.Component {
         const { section, formatType, md } = this.props;
         return (
             <React.Fragment>
-                <Title>Parameters</Title>
+                <Title section={section}>Parameters</Title>
                 <React.Fragment>
                     {section.params.map((param, i) => (
                         <div key={i} className="mb6">

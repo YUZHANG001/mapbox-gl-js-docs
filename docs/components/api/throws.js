@@ -7,7 +7,7 @@ export default class Throws extends React.Component {
         const { section, formatType, md } = this.props;
         return (
             <React.Fragment>
-                <Title>Throws</Title>
+                <Title section={section}>Throws</Title>
                 <ul>
                     {section.throws.map((throws, i) => (
                         <li key={i}>

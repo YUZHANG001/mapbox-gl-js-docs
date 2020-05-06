@@ -5,10 +5,10 @@ import Title from './title';
 
 export default class MembersList extends React.Component {
     render() {
-        const { title, members } = this.props;
+        const { section, title, members } = this.props;
         return (
             <React.Fragment>
-                <Title>{title}</Title>
+                <Title section={section}>{title}</Title>
                 <div className="mb18">
                     {members.map((member, i) => (
                         <ApiItemMember {...this.props} key={i} {...member} />
@@ -21,5 +21,6 @@ export default class MembersList extends React.Component {
 
 MembersList.propTypes = {
     title: PropTypes.string.isRequired,
-    members: PropTypes.array.isRequired
+    members: PropTypes.array.isRequired,
+    section: PropTypes.object.isRequired
 };

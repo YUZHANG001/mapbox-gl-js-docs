@@ -8,7 +8,7 @@ export default class Examples extends React.Component {
         const { section, md } = this.props;
         return (
             <React.Fragment>
-                <Title>Example</Title>
+                <Title section={section}>Example</Title>
                 {section.examples.map((example, i) => (
                     <React.Fragment key={i}>
                         {example.caption && <p>{md(example.caption)}</p>}

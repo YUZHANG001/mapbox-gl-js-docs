@@ -44,7 +44,13 @@ class ApiItem extends React.Component {
         const section = this.props;
 
         const membersList = (members, title) =>
-            !empty(members) && <MembersList title={title} members={members} />;
+            !empty(members) && (
+                <MembersList
+                    section={section}
+                    title={title}
+                    members={members}
+                />
+            );
 
         return (
             <section className="prose mb24">
