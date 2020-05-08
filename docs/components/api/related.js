@@ -1,19 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from './title';
+import SectionWrapper from './section-wrapper';
 
 export default class Related extends React.Component {
     render() {
         const { section, md } = this.props;
         return (
-            <React.Fragment>
-                <Title section={section}>Related</Title>
+            <SectionWrapper title="Related" {...this.props}>
                 <ul>
                     {section.sees.map((see, i) => (
                         <li key={i}>{md(see, true)}</li>
                     ))}
                 </ul>
-            </React.Fragment>
+            </SectionWrapper>
         );
     }
 }

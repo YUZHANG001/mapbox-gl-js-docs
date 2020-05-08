@@ -16,12 +16,10 @@ class ApiItemMember extends React.Component {
     render() {
         const member = this.props;
         return (
-            <div className="border-b border--gray-light">
-                <div
-                    className="pt60"
-                    style={{ marginTop: '-60px' }}
-                    id={member.namespace.toLowerCase()}
-                />
+            <div
+                className="border-b border--gray-light scroll-margin-top"
+                id={member.namespace.toLowerCase()}
+            >
                 <React.Fragment>
                     <button
                         className="cursor-pointer toggle-sibling color-blue-on-hover w-full py18"

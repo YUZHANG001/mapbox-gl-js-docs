@@ -11,8 +11,6 @@ import PropTypes from 'prop-types';
 import PageShell from '../../components/page_shell';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
 import { version } from '../../../mapbox-gl-js/package.json';
-import docs from '../../components/api.json';
-import ApiItem from '../../components/api/item';
 import DrUiNote from '@mapbox/dr-ui/note';
 
 export default class Api extends React.Component {
@@ -65,27 +63,6 @@ export default class Api extends React.Component {
                             .
                         </p>
                     </DrUiNote>
-                    <div className="api-section">
-                        {/* to break into pages, we should be able to filter this `doc` on doc.name === page.title (for each individual page */}
-                        {docs.map(doc => {
-                            // each page's content is stashed in `members.static` for some reason....
-
-                            const children = doc.members.static;
-                            return (
-                                <section key={doc.name} className="mb24 prose">
-                                    {children.map(child => {
-                                        return (
-                                            <ApiItem
-                                                location={this.props.location}
-                                                key={child.name}
-                                                {...child}
-                                            />
-                                        );
-                                    })}
-                                </section>
-                            );
-                        })}
-                    </div>
                 </div>
             </PageShell>
         );

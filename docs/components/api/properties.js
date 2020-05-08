@@ -1,57 +1,52 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from './title';
+import SectionWrapper from './section-wrapper';
 
 export default class Properties extends React.Component {
     render() {
         const { section, formatType, md } = this.props;
         return (
-            <React.Fragment>
-                <Title section={section}>Properties</Title>
-                <React.Fragment>
-                    {section.properties.map((property, i) => (
-                        <div key={i} className="mb6">
-                            <span className="txt-mono txt-bold mr6">
-                                {property.name}
+            <SectionWrapper title="Properties" {...this.props}>
+                {section.properties.map((property, i) => (
+                    <div key={i} className="mb6">
+                        <span className="txt-mono txt-bold mr6">
+                            {property.name}
+                        </span>
+                        <code className="color-gray">
+                            ({formatType(property.type)})
+                        </code>
+                        {property.default && (
+                            <span>
+                                {'('}
+                                default <code>{property.default}</code>
+                                {')'}
                             </span>
-                            <code className="color-gray">
-                                ({formatType(property.type)})
-                            </code>
-                            {property.default && (
-                                <span>
-                                    {'('}
-                                    default <code>{property.default}</code>
-                                    {')'}
-                                </span>
-                            )}
-                            {property.description && (
-                                <span>: {md(property.description, true)}</span>
-                            )}
-                            {property.properties && (
-                                <ul>
-                                    {property.properties.map((property, i) => (
-                                        <li key={i}>
-                                            <code>{property.name}</code>{' '}
-                                            {formatType(property.type)}
-                                            {property.default && (
-                                                <span>
-                                                    {'('}
-                                                    default{' '}
-                                                    <code>
-                                                        {property.default}
-                                                    </code>
-                                                    {')'}
-                                                </span>
-                                            )}
-                                            {md(property.description)}
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-                        </div>
-                    ))}
-                </React.Fragment>
-            </React.Fragment>
+                        )}
+                        {property.description && (
+                            <span>: {md(property.description, true)}</span>
+                        )}
+                        {property.properties && (
+                            <ul>
+                                {property.properties.map((property, i) => (
+                                    <li key={i}>
+                                        <code>{property.name}</code>{' '}
+                                        {formatType(property.type)}
+                                        {property.default && (
+                                            <span>
+                                                {'('}
+                                                default{' '}
+                                                <code>{property.default}</code>
+                                                {')'}
+                                            </span>
+                                        )}
+                                        {md(property.description)}
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                    </div>
+                ))}
+            </SectionWrapper>
         );
     }
 }

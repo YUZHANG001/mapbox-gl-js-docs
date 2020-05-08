@@ -1,14 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from './title';
 import Copyable from '../../components/copyable.js';
+import SectionWrapper from './section-wrapper';
 
 export default class Examples extends React.Component {
     render() {
         const { section, md } = this.props;
         return (
-            <React.Fragment>
-                <Title section={section}>Example</Title>
+            <SectionWrapper title="Example" {...this.props}>
                 {section.examples.map((example, i) => (
                     <React.Fragment key={i}>
                         {example.caption && <p>{md(example.caption)}</p>}
@@ -17,7 +16,7 @@ export default class Examples extends React.Component {
                         </Copyable>
                     </React.Fragment>
                 ))}
-            </React.Fragment>
+            </SectionWrapper>
         );
     }
 }

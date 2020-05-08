@@ -140,7 +140,9 @@ function buildMembersSubNav(members) {
         if (item.name)
             arr.push({
                 title: item.name,
-                path: slug(item.name)
+                path: item.namespace
+                    ? item.namespace.toLowerCase()
+                    : slug(item.name)
             });
         return arr;
     }, []);

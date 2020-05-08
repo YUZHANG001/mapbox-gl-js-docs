@@ -1,13 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Title from './title';
+import SectionWrapper from './section-wrapper';
 
 export default class Throws extends React.Component {
     render() {
         const { section, formatType, md } = this.props;
         return (
-            <React.Fragment>
-                <Title section={section}>Throws</Title>
+            <SectionWrapper title="Throws" {...this.props}>
                 <ul>
                     {section.throws.map((throws, i) => (
                         <li key={i}>
@@ -16,7 +15,7 @@ export default class Throws extends React.Component {
                         </li>
                     ))}
                 </ul>
-            </React.Fragment>
+            </SectionWrapper>
         );
     }
 }

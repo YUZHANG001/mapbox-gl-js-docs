@@ -1,36 +1,36 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import IconText from '@mapbox/mr-ui/icon-text';
+import Github from './github';
 
 export default class SectionHeading extends React.Component {
     render() {
-        const { section } = this.props;
+        const { section, headingLevel } = this.props;
+        const HeadingLevel = `h${headingLevel}`;
         return (
-            <div className="mb24">
-                <h3 className="mb12" id={section.namespace.toLowerCase()}>
+            <React.Fragment>
+                <HeadingLevel
+                    className="pt18 mt18 pb0 no-h2-border scroll-margin-top"
+                    id={section.namespace.toLowerCase()}
+                    style={{
+                        fontSize: '24px',
+                        lineHeight: '36px'
+                    }}
+                >
                     <a
                         className="unprose color-blue-on-hover"
                         href={`#${section.namespace.toLowerCase()}`}
                     >
                         {section.name}
                     </a>
-                </h3>
-                {section.context && section.context.github && (
-                    <a
-                        className="pt6 link--gray txt-s unprose"
-                        href={section.context.github.url}
-                    >
-                        <IconText iconBefore="github">
-                            {section.context.github.path}
-                        </IconText>
-                    </a>
-                )}
-            </div>
+                </HeadingLevel>
+                <Github section={section} />
+            </React.Fragment>
         );
     }
 }
 
 SectionHeading.propTypes = {
+    headingLevel: PropTypes.number,
     section: PropTypes.shape({
         namespace: PropTypes.string.isRequired,
         name: PropTypes.string.isRequired,
