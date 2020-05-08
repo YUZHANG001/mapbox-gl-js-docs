@@ -23,7 +23,8 @@ import { apiNavigation } from '../data/api-navigation';
 import { overviewNavigation } from '../data/overview-navigation';
 import { styleSpecNavigation } from '../data/style-spec-navigation';
 
-const redirect = require('../util/style-spec-redirect');
+const redirectStyleSpec = require('../util/style-spec-redirect');
+const redirectApiRef = require('../util/api-ref-redirect');
 
 const slugger = new GithubSlugger();
 
@@ -36,8 +37,17 @@ class PageShell extends React.Component {
             this.props.location.pathname === '/mapbox-gl-js/style-spec/' &&
             this.props.location.hash
         ) {
-            if (redirect(this.props.location))
-                window.location = redirect(this.props.location);
+            if (redirectStyleSpec(this.props.location))
+                window.location = redirectStyleSpec(this.props.location);
+        }
+
+        // redirect hashes on /api/
+        if (
+            this.props.location.pathname === '/mapbox-gl-js/api/' &&
+            this.props.location.hash
+        ) {
+            if (redirectApiRef(this.props.location))
+                window.location = redirectApiRef(this.props.location);
         }
 
         // initialize analytics
