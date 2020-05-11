@@ -75,7 +75,13 @@ function buldSubNav(section) {
 function buildSubSubNav(item, section) {
     const arr = [];
 
-    if (item.params && item.params.length > 0) {
+    if (
+        item.params &&
+        item.params.length > 0 &&
+        (item.kind !== 'class' ||
+            !item.constructorComment ||
+            item.constructorComment.access !== 'private')
+    ) {
         arr.push({
             title: 'Parameters',
             path: slug(`${section} Parameters`),
