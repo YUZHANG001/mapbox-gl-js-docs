@@ -12,6 +12,7 @@ import PageShell from '../../components/page_shell';
 import { prefixUrl } from '@mapbox/batfish/modules/prefix-url';
 import { version } from '../../../mapbox-gl-js/package.json';
 import DrUiNote from '@mapbox/dr-ui/note';
+import Feedback from '../../components/feedback';
 
 export default class Api extends React.Component {
     render() {
@@ -63,6 +64,7 @@ export default class Api extends React.Component {
                             .
                         </p>
                     </DrUiNote>
+                    <Feedback location={this.props.location} />
                 </div>
             </PageShell>
         );

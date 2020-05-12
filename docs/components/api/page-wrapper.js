@@ -5,9 +5,13 @@ import ApiPageItems from './api-page-items.js';
 
 export default class Api extends React.Component {
     render() {
+        // The feedback module will be added in ApiPageItem
         return (
-            <MarkdownPageshell {...this.props}>
-                <ApiPageItems pageTitle={this.props.frontMatter.title} />
+            <MarkdownPageshell feedback={false} {...this.props}>
+                <ApiPageItems
+                    pageTitle={this.props.frontMatter.title}
+                    location={this.props.location}
+                />
             </MarkdownPageshell>
         );
     }
@@ -15,6 +19,7 @@ export default class Api extends React.Component {
 
 Api.propTypes = {
     frontMatter: PropTypes.shape({
-        title: PropTypes.string
-    })
+        title: PropTypes.string.isRequired
+    }).isRequired,
+    location: PropTypes.object.isRequired
 };
