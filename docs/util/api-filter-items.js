@@ -1,6 +1,3 @@
-import docs from '../components/api.json';
+const docs = require('../components/api.json');
 
-export default function apiItemFilter(pageName) {
-    const filtered = docs.filter(doc => doc.name === pageName);
-    return filtered;
-}
+module.exports = pageName => docs.filter(doc => doc.name === pageName);

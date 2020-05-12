@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import apiFilterItems from '../../util/api-filter-items.js';
 import ApiItem from './item';
 import ApiItemContents from './item-contents';
 import SectionWrapper from './section-wrapper';
 import Github from './github';
+
+const apiFilterItems = require('../../util/api-filter-items.js');
 
 export default class ApiPageItems extends React.Component {
     render() {

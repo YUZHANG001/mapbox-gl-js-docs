@@ -19,7 +19,7 @@ import { routeToPrefixed } from '@mapbox/batfish/modules/route-to';
 import Search from '@mapbox/dr-ui/search';
 import * as Sentry from '@sentry/browser';
 // NavigationAccordion datasets
-import { apiNavigation } from '../data/api-navigation';
+import apiNavigation from '@mapbox/batfish/data/api-navigation'; // eslint-disable-line
 import { overviewNavigation } from '../data/overview-navigation';
 import { styleSpecNavigation } from '../data/style-spec-navigation';
 

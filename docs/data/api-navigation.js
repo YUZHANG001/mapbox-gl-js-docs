@@ -1,9 +1,10 @@
-// we should consider moving this to batfish dataSelectors to take the load off the clientside
+// this script is executed as a dataSelector in batfish.config.js
+// the content is available with:
+// import apiNavigation from '@mapbox/batfish/data/api-navigation';
+const slug = require('slugg');
+const apiFilterItems = require('../util/api-filter-items.js');
 
-import apiFilterItems from '../util/api-filter-items.js';
-import slug from 'slugg';
-
-export const apiNavigation = [
+module.exports = [
     {
         title: 'API Reference',
         path: ''

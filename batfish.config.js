@@ -1,6 +1,7 @@
 const webpack = require('webpack');
 const mapboxAssembly = require('@mapbox/mbx-assembly');
 const path = require('path');
+const apiNavigation = require('./docs/data/api-navigation');
 
 module.exports = () => {
     const config = {
@@ -80,6 +81,9 @@ module.exports = () => {
                         return folder;
                     });
                 return folders;
+            },
+            apiNavigation: () => {
+                return apiNavigation;
             }
         },
         devBrowserslist: false,
