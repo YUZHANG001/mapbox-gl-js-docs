@@ -1,6 +1,7 @@
 // this script is executed as a dataSelector in batfish.config.js
 // the content is available with:
 // import apiNavigation from '@mapbox/batfish/data/api-navigation';
+// when making changes to this file, you must rerun batfish (npm start)
 const slug = require('slugg');
 const apiFilterItems = require('../util/api-filter-items.js');
 
