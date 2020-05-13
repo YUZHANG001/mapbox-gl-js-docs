@@ -3,7 +3,15 @@
 import formatters from '../formatters';
 
 it('formatters', () => {
-    expect(formatters.autolink('Map')).toEqual('<a href="#map">Map</a>');
+    expect(formatters.autolink('Map#addLayer')).toEqual(
+        '<a href="/mapbox-gl-js/api/map/#map#addlayer">Map#addLayer</a>'
+    );
+    expect(formatters.autolink('Map.event:webglcontextlost')).toEqual(
+        '<a href="/mapbox-gl-js/api/map/#map.event:webglcontextlost">Map.event:webglcontextlost</a>'
+    );
+    expect(formatters.autolink('Map')).toEqual(
+        '<a href="/mapbox-gl-js/api/map/#map">Map</a>'
+    );
     expect(
         formatters.parameters(
             {

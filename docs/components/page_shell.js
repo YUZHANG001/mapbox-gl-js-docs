@@ -22,9 +22,9 @@ import * as Sentry from '@sentry/browser';
 import apiNavigation from '@mapbox/batfish/data/api-navigation'; // eslint-disable-line
 import { overviewNavigation } from '../data/overview-navigation';
 import { styleSpecNavigation } from '../data/style-spec-navigation';
+import redirectApiRef from '../util/api-ref-redirect';
 
 const redirectStyleSpec = require('../util/style-spec-redirect');
-const redirectApiRef = require('../util/api-ref-redirect');
 
 const slugger = new GithubSlugger();
 

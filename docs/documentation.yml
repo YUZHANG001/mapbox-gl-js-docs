@@ -1,9 +1,11 @@
 toc:
   - name: "Map class" # Note: changed to "map class" to get filtering to work for now to differentiate our page name "Map" from the mapbox-gl-js "Map"
+    page: 'map'
     children:
       - Map
 
   - name: Properties and options
+    page: 'properties'
     children:
       - name: Properties
         children:
@@ -29,6 +31,7 @@ toc:
           - setRTLTextPlugin
           - getRTLTextPluginStatus
   - name: Markers and controls
+    page: 'markers'
     children:
       - Marker
       - Popup
@@ -39,6 +42,7 @@ toc:
       - ScaleControl
       - FullscreenControl
   - name: Geography and geometry
+    page: 'geography'
     children:
       - LngLat
       - LngLatLike
@@ -50,6 +54,7 @@ toc:
       - EdgeInsets
 
   - name: User interaction handlers
+    page: 'handlers'
     children:
       - BoxZoomHandler
       - ScrollZoomHandler
@@ -60,6 +65,7 @@ toc:
       - TouchZoomRotateHandler
       - TouchPitchHandler
   - name: Sources
+    page: 'sources'
     children:
       - GeoJSONSource
       - VideoSource
@@ -67,6 +73,7 @@ toc:
       - CanvasSource
       - CanvasSourceOptions
   - name: Events
+    page: 'events'
     children:
       - Evented
       - MapMouseEvent
