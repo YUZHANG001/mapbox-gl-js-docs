@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import formatters from '../../util/formatters';
 import ApiItem from './item';
 import Icon from '@mapbox/mr-ui/icon';
+import classnames from 'classnames';
 
 class ApiItemMember extends React.Component {
     constructor(props) {
@@ -15,14 +16,22 @@ class ApiItemMember extends React.Component {
 
     render() {
         const member = this.props;
+
+        const HeadingLevel = `h${this.props.headingLevel}`;
         return (
             <div
-                className="border-b border--gray-light scroll-margin-top"
+                className="scroll-margin-top my6 border border--gray-light bg-gray-faint round"
                 id={member.namespace.toLowerCase()}
+                aria-expanded={this.state.disclosed}
             >
                 <React.Fragment>
                     <button
-                        className="cursor-pointer toggle-sibling color-blue-on-hover w-full py18"
+                        className={classnames(
+                            'cursor-pointer w-full color-blue-on-hover px12 py6',
+                            {
+                                'txt-bold': this.state.disclosed
+                            }
+                        )}
                         onClick={e => {
                             this.setState({ disclosed: !this.state.disclosed });
                             if (history.pushState) {
@@ -38,12 +47,22 @@ class ApiItemMember extends React.Component {
                             e.preventDefault();
                         }}
                     >
-                        <span className="txt-code truncate bg-white">
+                        <HeadingLevel
+                            style={{
+                                fontSize: '13px',
+                                lineHeight: '24px',
+                                fontWeight: 'inherit'
+                            }}
+                            className="txt-mono truncate mb0 pt0 inline-block"
+                        >
                             {member.name}
-                        </span>
+                        </HeadingLevel>
                         {member.kind === 'function' && (
                             <span
-                                className="color-gray txt-code mr12"
+                                className="txt-mono"
+                                style={{
+                                    color: '#54718f' /* a11y color-gray */
+                                }}
                                 dangerouslySetInnerHTML={{
                                     __html: `${formatters.parameters(
                                         member,
@@ -55,11 +74,11 @@ class ApiItemMember extends React.Component {
                         <div className="fr">
                             <Icon
                                 size={30}
-                                name={`${
+                                name={
                                     this.state.disclosed
                                         ? 'caret-down'
                                         : 'caret-right'
-                                }`}
+                                }
                                 inline={true}
                             />
                         </div>
@@ -67,7 +86,7 @@ class ApiItemMember extends React.Component {
                 </React.Fragment>
 
                 {this.state.disclosed && (
-                    <div className="toggle-target bg-gray-faint round py18 px18 mb12">
+                    <div className="pt12 pb18 px12 border-t border--gray-light round-b item-member bg-white">
                         <ApiItem
                             nested={true}
                             location={this.props.location}
@@ -85,6 +104,14 @@ class ApiItemMember extends React.Component {
         }
     }
 
+    componentDidUpdate(prevProps) {
+        if (prevProps.closeAll !== this.props.closeAll) {
+            if (this.props.closeAll && this.state.disclosed) {
+                this.setState({ disclosed: false });
+            }
+        }
+    }
+
     componentDidMount() {
         window.addEventListener('hashchange', this.hashChange);
         this.hashChange();
@@ -99,7 +126,9 @@ ApiItemMember.propTypes = {
     namespace: PropTypes.string,
     name: PropTypes.string,
     kind: PropTypes.string,
-    location: PropTypes.object
+    location: PropTypes.object,
+    closeAll: PropTypes.bool,
+    headingLevel: PropTypes.number
 };
 
 export default ApiItemMember;

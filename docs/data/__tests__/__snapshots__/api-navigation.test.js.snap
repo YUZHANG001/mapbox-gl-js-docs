@@ -11,638 +11,22 @@ Array [
     "subnav": Array [
       Object {
         "path": "map-parameters",
-        "subnav": Array [
-          Object {
-            "path": "options",
-            "title": "options",
-          },
-        ],
         "title": "Parameters",
       },
       Object {
         "path": "map-example",
-        "subnav": Array [],
         "title": "Example",
       },
       Object {
         "path": "map-instance-members",
-        "subnav": Array [
-          Object {
-            "path": "map#addcontrol",
-            "title": "addControl",
-          },
-          Object {
-            "path": "map#addimage",
-            "title": "addImage",
-          },
-          Object {
-            "path": "map#addlayer",
-            "title": "addLayer",
-          },
-          Object {
-            "path": "map#addsource",
-            "title": "addSource",
-          },
-          Object {
-            "path": "map#aretilesloaded",
-            "title": "areTilesLoaded",
-          },
-          Object {
-            "path": "map#boxzoom",
-            "title": "boxZoom",
-          },
-          Object {
-            "path": "map#cameraforbounds",
-            "title": "cameraForBounds",
-          },
-          Object {
-            "path": "map#doubleclickzoom",
-            "title": "doubleClickZoom",
-          },
-          Object {
-            "path": "map#dragpan",
-            "title": "dragPan",
-          },
-          Object {
-            "path": "map#dragrotate",
-            "title": "dragRotate",
-          },
-          Object {
-            "path": "map#easeto",
-            "title": "easeTo",
-          },
-          Object {
-            "path": "map#fitbounds",
-            "title": "fitBounds",
-          },
-          Object {
-            "path": "map#fitscreencoordinates",
-            "title": "fitScreenCoordinates",
-          },
-          Object {
-            "path": "map#flyto",
-            "title": "flyTo",
-          },
-          Object {
-            "path": "map#getbearing",
-            "title": "getBearing",
-          },
-          Object {
-            "path": "map#getbounds",
-            "title": "getBounds",
-          },
-          Object {
-            "path": "map#getcanvas",
-            "title": "getCanvas",
-          },
-          Object {
-            "path": "map#getcanvascontainer",
-            "title": "getCanvasContainer",
-          },
-          Object {
-            "path": "map#getcenter",
-            "title": "getCenter",
-          },
-          Object {
-            "path": "map#getcontainer",
-            "title": "getContainer",
-          },
-          Object {
-            "path": "map#getfeaturestate",
-            "title": "getFeatureState",
-          },
-          Object {
-            "path": "map#getfilter",
-            "title": "getFilter",
-          },
-          Object {
-            "path": "map#getlayer",
-            "title": "getLayer",
-          },
-          Object {
-            "path": "map#getlayoutproperty",
-            "title": "getLayoutProperty",
-          },
-          Object {
-            "path": "map#getlight",
-            "title": "getLight",
-          },
-          Object {
-            "path": "map#getmaxbounds",
-            "title": "getMaxBounds",
-          },
-          Object {
-            "path": "map#getmaxpitch",
-            "title": "getMaxPitch",
-          },
-          Object {
-            "path": "map#getmaxzoom",
-            "title": "getMaxZoom",
-          },
-          Object {
-            "path": "map#getminpitch",
-            "title": "getMinPitch",
-          },
-          Object {
-            "path": "map#getminzoom",
-            "title": "getMinZoom",
-          },
-          Object {
-            "path": "map#getpadding",
-            "title": "getPadding",
-          },
-          Object {
-            "path": "map#getpaintproperty",
-            "title": "getPaintProperty",
-          },
-          Object {
-            "path": "map#getpitch",
-            "title": "getPitch",
-          },
-          Object {
-            "path": "map#getrenderworldcopies",
-            "title": "getRenderWorldCopies",
-          },
-          Object {
-            "path": "map#getsource",
-            "title": "getSource",
-          },
-          Object {
-            "path": "map#getstyle",
-            "title": "getStyle",
-          },
-          Object {
-            "path": "map#getzoom",
-            "title": "getZoom",
-          },
-          Object {
-            "path": "map#hasimage",
-            "title": "hasImage",
-          },
-          Object {
-            "path": "map#ismoving",
-            "title": "isMoving",
-          },
-          Object {
-            "path": "map#isrotating",
-            "title": "isRotating",
-          },
-          Object {
-            "path": "map#issourceloaded",
-            "title": "isSourceLoaded",
-          },
-          Object {
-            "path": "map#isstyleloaded",
-            "title": "isStyleLoaded",
-          },
-          Object {
-            "path": "map#iszooming",
-            "title": "isZooming",
-          },
-          Object {
-            "path": "map#jumpto",
-            "title": "jumpTo",
-          },
-          Object {
-            "path": "map#keyboard",
-            "title": "keyboard",
-          },
-          Object {
-            "path": "map#listimages",
-            "title": "listImages",
-          },
-          Object {
-            "path": "map#loaded",
-            "title": "loaded",
-          },
-          Object {
-            "path": "map#loadimage",
-            "title": "loadImage",
-          },
-          Object {
-            "path": "map#movelayer",
-            "title": "moveLayer",
-          },
-          Object {
-            "path": "map#off",
-            "title": "off",
-          },
-          Object {
-            "path": "map#off",
-            "title": "off",
-          },
-          Object {
-            "path": "map#on",
-            "title": "on",
-          },
-          Object {
-            "path": "map#once",
-            "title": "once",
-          },
-          Object {
-            "path": "map#once",
-            "title": "once",
-          },
-          Object {
-            "path": "map#panby",
-            "title": "panBy",
-          },
-          Object {
-            "path": "map#panto",
-            "title": "panTo",
-          },
-          Object {
-            "path": "map#project",
-            "title": "project",
-          },
-          Object {
-            "path": "map#queryrenderedfeatures",
-            "title": "queryRenderedFeatures",
-          },
-          Object {
-            "path": "map#querysourcefeatures",
-            "title": "querySourceFeatures",
-          },
-          Object {
-            "path": "map#remove",
-            "title": "remove",
-          },
-          Object {
-            "path": "map#removecontrol",
-            "title": "removeControl",
-          },
-          Object {
-            "path": "map#removefeaturestate",
-            "title": "removeFeatureState",
-          },
-          Object {
-            "path": "map#removeimage",
-            "title": "removeImage",
-          },
-          Object {
-            "path": "map#removelayer",
-            "title": "removeLayer",
-          },
-          Object {
-            "path": "map#removesource",
-            "title": "removeSource",
-          },
-          Object {
-            "path": "map#repaint",
-            "title": "repaint",
-          },
-          Object {
-            "path": "map#resetnorth",
-            "title": "resetNorth",
-          },
-          Object {
-            "path": "map#resetnorthpitch",
-            "title": "resetNorthPitch",
-          },
-          Object {
-            "path": "map#resize",
-            "title": "resize",
-          },
-          Object {
-            "path": "map#rotateto",
-            "title": "rotateTo",
-          },
-          Object {
-            "path": "map#scrollzoom",
-            "title": "scrollZoom",
-          },
-          Object {
-            "path": "map#setbearing",
-            "title": "setBearing",
-          },
-          Object {
-            "path": "map#setcenter",
-            "title": "setCenter",
-          },
-          Object {
-            "path": "map#setfeaturestate",
-            "title": "setFeatureState",
-          },
-          Object {
-            "path": "map#setfilter",
-            "title": "setFilter",
-          },
-          Object {
-            "path": "map#setlayerzoomrange",
-            "title": "setLayerZoomRange",
-          },
-          Object {
-            "path": "map#setlayoutproperty",
-            "title": "setLayoutProperty",
-          },
-          Object {
-            "path": "map#setlight",
-            "title": "setLight",
-          },
-          Object {
-            "path": "map#setmaxbounds",
-            "title": "setMaxBounds",
-          },
-          Object {
-            "path": "map#setmaxpitch",
-            "title": "setMaxPitch",
-          },
-          Object {
-            "path": "map#setmaxzoom",
-            "title": "setMaxZoom",
-          },
-          Object {
-            "path": "map#setminpitch",
-            "title": "setMinPitch",
-          },
-          Object {
-            "path": "map#setminzoom",
-            "title": "setMinZoom",
-          },
-          Object {
-            "path": "map#setpadding",
-            "title": "setPadding",
-          },
-          Object {
-            "path": "map#setpaintproperty",
-            "title": "setPaintProperty",
-          },
-          Object {
-            "path": "map#setpitch",
-            "title": "setPitch",
-          },
-          Object {
-            "path": "map#setrenderworldcopies",
-            "title": "setRenderWorldCopies",
-          },
-          Object {
-            "path": "map#setstyle",
-            "title": "setStyle",
-          },
-          Object {
-            "path": "map#setzoom",
-            "title": "setZoom",
-          },
-          Object {
-            "path": "map#showcollisionboxes",
-            "title": "showCollisionBoxes",
-          },
-          Object {
-            "path": "map#showpadding",
-            "title": "showPadding",
-          },
-          Object {
-            "path": "map#showtileboundaries",
-            "title": "showTileBoundaries",
-          },
-          Object {
-            "path": "map#snaptonorth",
-            "title": "snapToNorth",
-          },
-          Object {
-            "path": "map#stop",
-            "title": "stop",
-          },
-          Object {
-            "path": "map#touchpitch",
-            "title": "touchPitch",
-          },
-          Object {
-            "path": "map#touchzoomrotate",
-            "title": "touchZoomRotate",
-          },
-          Object {
-            "path": "map#triggerrepaint",
-            "title": "triggerRepaint",
-          },
-          Object {
-            "path": "map#unproject",
-            "title": "unproject",
-          },
-          Object {
-            "path": "map#updateimage",
-            "title": "updateImage",
-          },
-          Object {
-            "path": "map#version",
-            "title": "version",
-          },
-          Object {
-            "path": "map#zoomin",
-            "title": "zoomIn",
-          },
-          Object {
-            "path": "map#zoomout",
-            "title": "zoomOut",
-          },
-          Object {
-            "path": "map#zoomto",
-            "title": "zoomTo",
-          },
-        ],
         "title": "Instance members",
       },
       Object {
         "path": "map-events",
-        "subnav": Array [
-          Object {
-            "path": "map.event:boxzoomcancel",
-            "title": "boxzoomcancel",
-          },
-          Object {
-            "path": "map.event:boxzoomend",
-            "title": "boxzoomend",
-          },
-          Object {
-            "path": "map.event:boxzoomstart",
-            "title": "boxzoomstart",
-          },
-          Object {
-            "path": "map.event:click",
-            "title": "click",
-          },
-          Object {
-            "path": "map.event:contextmenu",
-            "title": "contextmenu",
-          },
-          Object {
-            "path": "map.event:data",
-            "title": "data",
-          },
-          Object {
-            "path": "map.event:dataloading",
-            "title": "dataloading",
-          },
-          Object {
-            "path": "map.event:dblclick",
-            "title": "dblclick",
-          },
-          Object {
-            "path": "map.event:drag",
-            "title": "drag",
-          },
-          Object {
-            "path": "map.event:dragend",
-            "title": "dragend",
-          },
-          Object {
-            "path": "map.event:dragstart",
-            "title": "dragstart",
-          },
-          Object {
-            "path": "map.event:error",
-            "title": "error",
-          },
-          Object {
-            "path": "map.event:idle",
-            "title": "idle",
-          },
-          Object {
-            "path": "map.event:load",
-            "title": "load",
-          },
-          Object {
-            "path": "map.event:mousedown",
-            "title": "mousedown",
-          },
-          Object {
-            "path": "map.event:mouseenter",
-            "title": "mouseenter",
-          },
-          Object {
-            "path": "map.event:mouseleave",
-            "title": "mouseleave",
-          },
-          Object {
-            "path": "map.event:mousemove",
-            "title": "mousemove",
-          },
-          Object {
-            "path": "map.event:mouseout",
-            "title": "mouseout",
-          },
-          Object {
-            "path": "map.event:mouseover",
-            "title": "mouseover",
-          },
-          Object {
-            "path": "map.event:mouseup",
-            "title": "mouseup",
-          },
-          Object {
-            "path": "map.event:move",
-            "title": "move",
-          },
-          Object {
-            "path": "map.event:moveend",
-            "title": "moveend",
-          },
-          Object {
-            "path": "map.event:movestart",
-            "title": "movestart",
-          },
-          Object {
-            "path": "map.event:pitch",
-            "title": "pitch",
-          },
-          Object {
-            "path": "map.event:pitchend",
-            "title": "pitchend",
-          },
-          Object {
-            "path": "map.event:pitchstart",
-            "title": "pitchstart",
-          },
-          Object {
-            "path": "map.event:remove",
-            "title": "remove",
-          },
-          Object {
-            "path": "map.event:render",
-            "title": "render",
-          },
-          Object {
-            "path": "map.event:resize",
-            "title": "resize",
-          },
-          Object {
-            "path": "map.event:rotate",
-            "title": "rotate",
-          },
-          Object {
-            "path": "map.event:rotateend",
-            "title": "rotateend",
-          },
-          Object {
-            "path": "map.event:rotatestart",
-            "title": "rotatestart",
-          },
-          Object {
-            "path": "map.event:sourcedata",
-            "title": "sourcedata",
-          },
-          Object {
-            "path": "map.event:sourcedataloading",
-            "title": "sourcedataloading",
-          },
-          Object {
-            "path": "map.event:styledata",
-            "title": "styledata",
-          },
-          Object {
-            "path": "map.event:styledataloading",
-            "title": "styledataloading",
-          },
-          Object {
-            "path": "map.event:styleimagemissing",
-            "title": "styleimagemissing",
-          },
-          Object {
-            "path": "map.event:touchcancel",
-            "title": "touchcancel",
-          },
-          Object {
-            "path": "map.event:touchend",
-            "title": "touchend",
-          },
-          Object {
-            "path": "map.event:touchmove",
-            "title": "touchmove",
-          },
-          Object {
-            "path": "map.event:touchstart",
-            "title": "touchstart",
-          },
-          Object {
-            "path": "map.event:webglcontextlost",
-            "title": "webglcontextlost",
-          },
-          Object {
-            "path": "map.event:webglcontextrestored",
-            "title": "webglcontextrestored",
-          },
-          Object {
-            "path": "map.event:wheel",
-            "title": "wheel",
-          },
-          Object {
-            "path": "map.event:zoom",
-            "title": "zoom",
-          },
-          Object {
-            "path": "map.event:zoomend",
-            "title": "zoomend",
-          },
-          Object {
-            "path": "map.event:zoomstart",
-            "title": "zoomstart",
-          },
-        ],
         "title": "Events",
       },
       Object {
         "path": "map-related",
-        "subnav": Array [],
         "title": "Related",
       },
     ],
@@ -659,17 +43,14 @@ Array [
             "subnav": Array [
               Object {
                 "path": "accesstoken-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "accesstoken-returns",
-                "subnav": Array [],
                 "title": "Returns",
               },
               Object {
                 "path": "accesstoken-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -680,12 +61,10 @@ Array [
             "subnav": Array [
               Object {
                 "path": "baseapiurl-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "baseapiurl-returns",
-                "subnav": Array [],
                 "title": "Returns",
               },
             ],
@@ -696,12 +75,10 @@ Array [
             "subnav": Array [
               Object {
                 "path": "workercount-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "workercount-returns",
-                "subnav": Array [],
                 "title": "Returns",
               },
             ],
@@ -712,12 +89,10 @@ Array [
             "subnav": Array [
               Object {
                 "path": "maxparallelimagerequests-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "maxparallelimagerequests-returns",
-                "subnav": Array [],
                 "title": "Returns",
               },
             ],
@@ -734,27 +109,18 @@ Array [
             "subnav": Array [
               Object {
                 "path": "supported-parameters",
-                "subnav": Array [
-                  Object {
-                    "path": "options",
-                    "title": "options",
-                  },
-                ],
                 "title": "Parameters",
               },
               Object {
                 "path": "supported-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "supported-returns",
-                "subnav": Array [],
                 "title": "Returns",
               },
               Object {
                 "path": "supported-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -770,17 +136,10 @@ Array [
             "subnav": Array [
               Object {
                 "path": "clearstorage-parameters",
-                "subnav": Array [
-                  Object {
-                    "path": "callback",
-                    "title": "callback",
-                  },
-                ],
                 "title": "Parameters",
               },
               Object {
                 "path": "clearstorage-example",
-                "subnav": Array [],
                 "title": "Example",
               },
             ],
@@ -791,47 +150,14 @@ Array [
             "subnav": Array [
               Object {
                 "path": "customlayerinterface-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "id",
-                    "title": "id",
-                  },
-                  Object {
-                    "path": "type",
-                    "title": "type",
-                  },
-                  Object {
-                    "path": "renderingmode",
-                    "title": "renderingMode",
-                  },
-                ],
                 "title": "Properties",
               },
               Object {
                 "path": "customlayerinterface-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "customlayerinterface-instance-members",
-                "subnav": Array [
-                  Object {
-                    "path": "customlayerinterface#onadd",
-                    "title": "onAdd",
-                  },
-                  Object {
-                    "path": "customlayerinterface#onremove",
-                    "title": "onRemove",
-                  },
-                  Object {
-                    "path": "customlayerinterface#prerender",
-                    "title": "prerender",
-                  },
-                  Object {
-                    "path": "customlayerinterface#render",
-                    "title": "render",
-                  },
-                ],
                 "title": "Instance members",
               },
             ],
@@ -842,48 +168,18 @@ Array [
             "subnav": Array [
               Object {
                 "path": "styleimageinterface-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "width",
-                    "title": "width",
-                  },
-                  Object {
-                    "path": "height",
-                    "title": "height",
-                  },
-                  Object {
-                    "path": "data",
-                    "title": "data",
-                  },
-                ],
                 "title": "Properties",
               },
               Object {
                 "path": "styleimageinterface-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "styleimageinterface-instance-members",
-                "subnav": Array [
-                  Object {
-                    "path": "styleimageinterface#onadd",
-                    "title": "onAdd",
-                  },
-                  Object {
-                    "path": "styleimageinterface#onremove",
-                    "title": "onRemove",
-                  },
-                  Object {
-                    "path": "styleimageinterface#render",
-                    "title": "render",
-                  },
-                ],
                 "title": "Instance members",
               },
               Object {
                 "path": "styleimageinterface-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -894,41 +190,10 @@ Array [
             "subnav": Array [
               Object {
                 "path": "requestparameters-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "url",
-                    "title": "url",
-                  },
-                  Object {
-                    "path": "headers",
-                    "title": "headers",
-                  },
-                  Object {
-                    "path": "method",
-                    "title": "method",
-                  },
-                  Object {
-                    "path": "body",
-                    "title": "body",
-                  },
-                  Object {
-                    "path": "type",
-                    "title": "type",
-                  },
-                  Object {
-                    "path": "credentials",
-                    "title": "credentials",
-                  },
-                  Object {
-                    "path": "collectresourcetiming",
-                    "title": "collectResourceTiming",
-                  },
-                ],
                 "title": "Properties",
               },
               Object {
                 "path": "requestparameters-example",
-                "subnav": Array [],
                 "title": "Example",
               },
             ],
@@ -939,7 +204,6 @@ Array [
             "subnav": Array [
               Object {
                 "path": "prewarm-example",
-                "subnav": Array [],
                 "title": "Example",
               },
             ],
@@ -950,7 +214,6 @@ Array [
             "subnav": Array [
               Object {
                 "path": "clearprewarmedresources-example",
-                "subnav": Array [],
                 "title": "Example",
               },
             ],
@@ -967,28 +230,6 @@ Array [
             "subnav": Array [
               Object {
                 "path": "animationoptions-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "duration",
-                    "title": "duration",
-                  },
-                  Object {
-                    "path": "easing",
-                    "title": "easing",
-                  },
-                  Object {
-                    "path": "offset",
-                    "title": "offset",
-                  },
-                  Object {
-                    "path": "animate",
-                    "title": "animate",
-                  },
-                  Object {
-                    "path": "essential",
-                    "title": "essential",
-                  },
-                ],
                 "title": "Properties",
               },
             ],
@@ -999,42 +240,14 @@ Array [
             "subnav": Array [
               Object {
                 "path": "cameraoptions-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "center",
-                    "title": "center",
-                  },
-                  Object {
-                    "path": "zoom",
-                    "title": "zoom",
-                  },
-                  Object {
-                    "path": "bearing",
-                    "title": "bearing",
-                  },
-                  Object {
-                    "path": "pitch",
-                    "title": "pitch",
-                  },
-                  Object {
-                    "path": "around",
-                    "title": "around",
-                  },
-                  Object {
-                    "path": "padding",
-                    "title": "padding",
-                  },
-                ],
                 "title": "Properties",
               },
               Object {
                 "path": "cameraoptions-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "cameraoptions-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -1045,34 +258,14 @@ Array [
             "subnav": Array [
               Object {
                 "path": "paddingoptions-properties",
-                "subnav": Array [
-                  Object {
-                    "path": "top",
-                    "title": "top",
-                  },
-                  Object {
-                    "path": "bottom",
-                    "title": "bottom",
-                  },
-                  Object {
-                    "path": "left",
-                    "title": "left",
-                  },
-                  Object {
-                    "path": "right",
-                    "title": "right",
-                  },
-                ],
                 "title": "Properties",
               },
               Object {
                 "path": "paddingoptions-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "paddingoptions-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -1083,30 +276,14 @@ Array [
             "subnav": Array [
               Object {
                 "path": "setrtltextplugin-parameters",
-                "subnav": Array [
-                  Object {
-                    "path": "pluginurl",
-                    "title": "pluginURL",
-                  },
-                  Object {
-                    "path": "callback",
-                    "title": "callback",
-                  },
-                  Object {
-                    "path": "lazy",
-                    "title": "lazy",
-                  },
-                ],
                 "title": "Parameters",
               },
               Object {
                 "path": "setrtltextplugin-example",
-                "subnav": Array [],
                 "title": "Example",
               },
               Object {
                 "path": "setrtltextplugin-related",
-                "subnav": Array [],
                 "title": "Related",
               },
             ],
@@ -1117,7 +294,6 @@ Array [
             "subnav": Array [
               Object {
                 "path": "getrtltextpluginstatus-example",
-                "subnav": Array [],
                 "title": "Example",
               },
             ],
@@ -1137,122 +313,22 @@ Array [
         "subnav": Array [
           Object {
             "path": "marker-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-              Object {
-                "path": "legacyoptions",
-                "title": "legacyOptions",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "marker-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "marker-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "marker#addto",
-                "title": "addTo",
-              },
-              Object {
-                "path": "marker#getelement",
-                "title": "getElement",
-              },
-              Object {
-                "path": "marker#getlnglat",
-                "title": "getLngLat",
-              },
-              Object {
-                "path": "marker#getoffset",
-                "title": "getOffset",
-              },
-              Object {
-                "path": "marker#getpitchalignment",
-                "title": "getPitchAlignment",
-              },
-              Object {
-                "path": "marker#getpopup",
-                "title": "getPopup",
-              },
-              Object {
-                "path": "marker#getrotation",
-                "title": "getRotation",
-              },
-              Object {
-                "path": "marker#getrotationalignment",
-                "title": "getRotationAlignment",
-              },
-              Object {
-                "path": "marker#isdraggable",
-                "title": "isDraggable",
-              },
-              Object {
-                "path": "marker#remove",
-                "title": "remove",
-              },
-              Object {
-                "path": "marker#setdraggable",
-                "title": "setDraggable",
-              },
-              Object {
-                "path": "marker#setlnglat",
-                "title": "setLngLat",
-              },
-              Object {
-                "path": "marker#setoffset",
-                "title": "setOffset",
-              },
-              Object {
-                "path": "marker#setpitchalignment",
-                "title": "setPitchAlignment",
-              },
-              Object {
-                "path": "marker#setpopup",
-                "title": "setPopup",
-              },
-              Object {
-                "path": "marker#setrotation",
-                "title": "setRotation",
-              },
-              Object {
-                "path": "marker#setrotationalignment",
-                "title": "setRotationAlignment",
-              },
-              Object {
-                "path": "marker#togglepopup",
-                "title": "togglePopup",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "marker-events",
-            "subnav": Array [
-              Object {
-                "path": "marker.event:drag",
-                "title": "drag",
-              },
-              Object {
-                "path": "marker.event:dragend",
-                "title": "dragend",
-              },
-              Object {
-                "path": "marker.event:dragstart",
-                "title": "dragstart",
-              },
-            ],
             "title": "Events",
           },
           Object {
             "path": "marker-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1263,102 +339,22 @@ Array [
         "subnav": Array [
           Object {
             "path": "popup-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "popup-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "popup-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "popup#addclassname",
-                "title": "addClassName",
-              },
-              Object {
-                "path": "popup#addto",
-                "title": "addTo",
-              },
-              Object {
-                "path": "popup#getelement",
-                "title": "getElement",
-              },
-              Object {
-                "path": "popup#getlnglat",
-                "title": "getLngLat",
-              },
-              Object {
-                "path": "popup#getmaxwidth",
-                "title": "getMaxWidth",
-              },
-              Object {
-                "path": "popup#isopen",
-                "title": "isOpen",
-              },
-              Object {
-                "path": "popup#remove",
-                "title": "remove",
-              },
-              Object {
-                "path": "popup#removeclassname",
-                "title": "removeClassName",
-              },
-              Object {
-                "path": "popup#setdomcontent",
-                "title": "setDOMContent",
-              },
-              Object {
-                "path": "popup#sethtml",
-                "title": "setHTML",
-              },
-              Object {
-                "path": "popup#setlnglat",
-                "title": "setLngLat",
-              },
-              Object {
-                "path": "popup#setmaxwidth",
-                "title": "setMaxWidth",
-              },
-              Object {
-                "path": "popup#settext",
-                "title": "setText",
-              },
-              Object {
-                "path": "popup#toggleclassname",
-                "title": "toggleClassName",
-              },
-              Object {
-                "path": "popup#trackpointer",
-                "title": "trackPointer",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "popup-events",
-            "subnav": Array [
-              Object {
-                "path": "popup.event:close",
-                "title": "close",
-              },
-              Object {
-                "path": "popup.event:open",
-                "title": "open",
-              },
-            ],
             "title": "Events",
           },
           Object {
             "path": "popup-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1369,25 +365,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "icontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "icontrol-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "icontrol#getdefaultposition",
-                "title": "getDefaultPosition",
-              },
-              Object {
-                "path": "icontrol#onadd",
-                "title": "onAdd",
-              },
-              Object {
-                "path": "icontrol#onremove",
-                "title": "onRemove",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1398,22 +379,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "navigationcontrol-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "navigationcontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "navigationcontrol-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1424,58 +397,22 @@ Array [
         "subnav": Array [
           Object {
             "path": "geolocatecontrol-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "geolocatecontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "geolocatecontrol-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "geolocatecontrol#trigger",
-                "title": "trigger",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "geolocatecontrol-events",
-            "subnav": Array [
-              Object {
-                "path": "geolocatecontrol.event:error",
-                "title": "error",
-              },
-              Object {
-                "path": "geolocatecontrol.event:geolocate",
-                "title": "geolocate",
-              },
-              Object {
-                "path": "geolocatecontrol.event:outofmaxbounds",
-                "title": "outofmaxbounds",
-              },
-              Object {
-                "path": "geolocatecontrol.event:trackuserlocationend",
-                "title": "trackuserlocationend",
-              },
-              Object {
-                "path": "geolocatecontrol.event:trackuserlocationstart",
-                "title": "trackuserlocationstart",
-              },
-            ],
             "title": "Events",
           },
           Object {
             "path": "geolocatecontrol-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1486,17 +423,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "attributioncontrol-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "attributioncontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -1507,27 +437,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "scalecontrol-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "scalecontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "scalecontrol-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "scalecontrol#setunit",
-                "title": "setUnit",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1538,22 +455,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "fullscreencontrol-parameters",
-            "subnav": Array [
-              Object {
-                "path": "options",
-                "title": "options",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "fullscreencontrol-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "fullscreencontrol-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1570,62 +479,22 @@ Array [
         "subnav": Array [
           Object {
             "path": "lnglat-parameters",
-            "subnav": Array [
-              Object {
-                "path": "lng",
-                "title": "lng",
-              },
-              Object {
-                "path": "lat",
-                "title": "lat",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "lnglat-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "lnglat-static-members",
-            "subnav": Array [
-              Object {
-                "path": "lnglat.convert",
-                "title": "convert",
-              },
-            ],
             "title": "Static members",
           },
           Object {
             "path": "lnglat-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "lnglat#distanceto",
-                "title": "distanceTo",
-              },
-              Object {
-                "path": "lnglat#toarray",
-                "title": "toArray",
-              },
-              Object {
-                "path": "lnglat#tobounds",
-                "title": "toBounds",
-              },
-              Object {
-                "path": "lnglat#tostring",
-                "title": "toString",
-              },
-              Object {
-                "path": "lnglat#wrap",
-                "title": "wrap",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "lnglat-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1636,7 +505,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "lnglatlike-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -1647,101 +515,18 @@ Array [
         "subnav": Array [
           Object {
             "path": "lnglatbounds-parameters",
-            "subnav": Array [
-              Object {
-                "path": "sw",
-                "title": "sw",
-              },
-              Object {
-                "path": "ne",
-                "title": "ne",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "lnglatbounds-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "lnglatbounds-static-members",
-            "subnav": Array [
-              Object {
-                "path": "lnglatbounds.convert",
-                "title": "convert",
-              },
-            ],
             "title": "Static members",
           },
           Object {
             "path": "lnglatbounds-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "lnglatbounds#contains",
-                "title": "contains",
-              },
-              Object {
-                "path": "lnglatbounds#extend",
-                "title": "extend",
-              },
-              Object {
-                "path": "lnglatbounds#getcenter",
-                "title": "getCenter",
-              },
-              Object {
-                "path": "lnglatbounds#geteast",
-                "title": "getEast",
-              },
-              Object {
-                "path": "lnglatbounds#getnorth",
-                "title": "getNorth",
-              },
-              Object {
-                "path": "lnglatbounds#getnortheast",
-                "title": "getNorthEast",
-              },
-              Object {
-                "path": "lnglatbounds#getnorthwest",
-                "title": "getNorthWest",
-              },
-              Object {
-                "path": "lnglatbounds#getsouth",
-                "title": "getSouth",
-              },
-              Object {
-                "path": "lnglatbounds#getsoutheast",
-                "title": "getSouthEast",
-              },
-              Object {
-                "path": "lnglatbounds#getsouthwest",
-                "title": "getSouthWest",
-              },
-              Object {
-                "path": "lnglatbounds#getwest",
-                "title": "getWest",
-              },
-              Object {
-                "path": "lnglatbounds#isempty",
-                "title": "isEmpty",
-              },
-              Object {
-                "path": "lnglatbounds#setnortheast",
-                "title": "setNorthEast",
-              },
-              Object {
-                "path": "lnglatbounds#setsouthwest",
-                "title": "setSouthWest",
-              },
-              Object {
-                "path": "lnglatbounds#toarray",
-                "title": "toArray",
-              },
-              Object {
-                "path": "lnglatbounds#tostring",
-                "title": "toString",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1752,7 +537,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "lnglatboundslike-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -1763,7 +547,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "point-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -1774,7 +557,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "pointlike-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -1785,58 +567,22 @@ Array [
         "subnav": Array [
           Object {
             "path": "mercatorcoordinate-parameters",
-            "subnav": Array [
-              Object {
-                "path": "x",
-                "title": "x",
-              },
-              Object {
-                "path": "y",
-                "title": "y",
-              },
-              Object {
-                "path": "z",
-                "title": "z",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "mercatorcoordinate-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "mercatorcoordinate-static-members",
-            "subnav": Array [
-              Object {
-                "path": "mercatorcoordinate.fromlnglat",
-                "title": "fromLngLat",
-              },
-            ],
             "title": "Static members",
           },
           Object {
             "path": "mercatorcoordinate-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "mercatorcoordinate#meterinmercatorcoordinateunits",
-                "title": "meterInMercatorCoordinateUnits",
-              },
-              Object {
-                "path": "mercatorcoordinate#toaltitude",
-                "title": "toAltitude",
-              },
-              Object {
-                "path": "mercatorcoordinate#tolnglat",
-                "title": "toLngLat",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "mercatorcoordinate-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -1847,42 +593,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "edgeinsets-parameters",
-            "subnav": Array [
-              Object {
-                "path": "top",
-                "title": "top",
-              },
-              Object {
-                "path": "bottom",
-                "title": "bottom",
-              },
-              Object {
-                "path": "left",
-                "title": "left",
-              },
-              Object {
-                "path": "right",
-                "title": "right",
-              },
-            ],
             "title": "Parameters",
           },
           Object {
             "path": "edgeinsets-static-members",
-            "subnav": Array [
-              Object {
-                "path": "edgeinsetsgetcenter",
-                "title": "getCenter",
-              },
-              Object {
-                "path": "edgeinsetsinterpolate",
-                "title": "interpolate",
-              },
-              Object {
-                "path": "edgeinsetstojson",
-                "title": "toJSON",
-              },
-            ],
             "title": "Static members",
           },
         ],
@@ -1899,24 +613,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "boxzoomhandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "boxzoomhandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "boxzoomhandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "boxzoomhandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "boxzoomhandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1927,28 +623,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "scrollzoomhandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "scrollzoomhandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "scrollzoomhandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "scrollzoomhandler#isenabled",
-                "title": "isEnabled",
-              },
-              Object {
-                "path": "scrollzoomhandler#setwheelzoomrate",
-                "title": "setWheelZoomRate",
-              },
-              Object {
-                "path": "scrollzoomhandler#setzoomrate",
-                "title": "setZoomRate",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1959,24 +633,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "dragpanhandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "dragpanhandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "dragpanhandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "dragpanhandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "dragpanhandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -1987,24 +643,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "dragrotatehandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "dragrotatehandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "dragrotatehandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "dragrotatehandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "dragrotatehandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2020,24 +658,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "doubleclickzoomhandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "doubleclickzoomhandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "doubleclickzoomhandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "doubleclickzoomhandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "doubleclickzoomhandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2048,32 +668,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "touchzoomrotatehandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "touchzoomrotatehandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "touchzoomrotatehandler#disablerotation",
-                "title": "disableRotation",
-              },
-              Object {
-                "path": "touchzoomrotatehandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "touchzoomrotatehandler#enablerotation",
-                "title": "enableRotation",
-              },
-              Object {
-                "path": "touchzoomrotatehandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "touchzoomrotatehandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2084,24 +678,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "touchpitchhandler-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "touchpitchhandler#disable",
-                "title": "disable",
-              },
-              Object {
-                "path": "touchpitchhandler#enable",
-                "title": "enable",
-              },
-              Object {
-                "path": "touchpitchhandler#isactive",
-                "title": "isActive",
-              },
-              Object {
-                "path": "touchpitchhandler#isenabled",
-                "title": "isEnabled",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2118,34 +694,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "geojsonsource-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "geojsonsource-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "geojsonsource#getclusterchildren",
-                "title": "getClusterChildren",
-              },
-              Object {
-                "path": "geojsonsource#getclusterexpansionzoom",
-                "title": "getClusterExpansionZoom",
-              },
-              Object {
-                "path": "geojsonsource#getclusterleaves",
-                "title": "getClusterLeaves",
-              },
-              Object {
-                "path": "geojsonsource#setdata",
-                "title": "setData",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "geojsonsource-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -2156,34 +712,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "videosource-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "videosource-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "videosource#getvideo",
-                "title": "getVideo",
-              },
-              Object {
-                "path": "videosource#pause",
-                "title": "pause",
-              },
-              Object {
-                "path": "videosource#play",
-                "title": "play",
-              },
-              Object {
-                "path": "videosource#setcoordinates",
-                "title": "setCoordinates",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "videosource-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -2194,26 +730,14 @@ Array [
         "subnav": Array [
           Object {
             "path": "imagesource-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "imagesource-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "imagesource#setcoordinates",
-                "title": "setCoordinates",
-              },
-              Object {
-                "path": "imagesource#updateimage",
-                "title": "updateImage",
-              },
-            ],
             "title": "Instance members",
           },
           Object {
             "path": "imagesource-related",
-            "subnav": Array [],
             "title": "Related",
           },
         ],
@@ -2224,29 +748,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "canvassource-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "canvassource-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "canvassource#getcanvas",
-                "title": "getCanvas",
-              },
-              Object {
-                "path": "canvassource#pause",
-                "title": "pause",
-              },
-              Object {
-                "path": "canvassource#play",
-                "title": "play",
-              },
-              Object {
-                "path": "canvassource#setcoordinates",
-                "title": "setCoordinates",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2257,24 +762,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "canvassourceoptions-properties",
-            "subnav": Array [
-              Object {
-                "path": "type",
-                "title": "type",
-              },
-              Object {
-                "path": "canvas",
-                "title": "canvas",
-              },
-              Object {
-                "path": "coordinates",
-                "title": "coordinates",
-              },
-              Object {
-                "path": "animate",
-                "title": "animate",
-              },
-            ],
             "title": "Properties",
           },
         ],
@@ -2291,20 +778,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "evented-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "evented#off",
-                "title": "off",
-              },
-              Object {
-                "path": "evented#on",
-                "title": "on",
-              },
-              Object {
-                "path": "evented#once",
-                "title": "once",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2315,37 +788,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "mapmouseevent-example",
-            "subnav": Array [],
             "title": "Example",
           },
           Object {
             "path": "mapmouseevent-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "mapmouseevent#lnglat",
-                "title": "lngLat",
-              },
-              Object {
-                "path": "mapmouseevent#originalevent",
-                "title": "originalEvent",
-              },
-              Object {
-                "path": "mapmouseevent#point",
-                "title": "point",
-              },
-              Object {
-                "path": "mapmouseevent#preventdefault",
-                "title": "preventDefault",
-              },
-              Object {
-                "path": "mapmouseevent#target",
-                "title": "target",
-              },
-              Object {
-                "path": "mapmouseevent#type",
-                "title": "type",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2356,40 +802,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "maptouchevent-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "maptouchevent#lnglat",
-                "title": "lngLat",
-              },
-              Object {
-                "path": "maptouchevent#lnglats",
-                "title": "lngLats",
-              },
-              Object {
-                "path": "maptouchevent#originalevent",
-                "title": "originalEvent",
-              },
-              Object {
-                "path": "maptouchevent#point",
-                "title": "point",
-              },
-              Object {
-                "path": "maptouchevent#points",
-                "title": "points",
-              },
-              Object {
-                "path": "maptouchevent#preventdefault",
-                "title": "preventDefault",
-              },
-              Object {
-                "path": "maptouchevent#target",
-                "title": "target",
-              },
-              Object {
-                "path": "maptouchevent#type",
-                "title": "type",
-              },
-            ],
             "title": "Instance members",
           },
         ],
@@ -2400,20 +812,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "mapboxzoomevent-properties",
-            "subnav": Array [
-              Object {
-                "path": "originalevent",
-                "title": "originalEvent",
-              },
-              Object {
-                "path": "type",
-                "title": "type",
-              },
-              Object {
-                "path": "target",
-                "title": "target",
-              },
-            ],
             "title": "Properties",
           },
         ],
@@ -2424,41 +822,10 @@ Array [
         "subnav": Array [
           Object {
             "path": "mapdataevent-properties",
-            "subnav": Array [
-              Object {
-                "path": "type",
-                "title": "type",
-              },
-              Object {
-                "path": "datatype",
-                "title": "dataType",
-              },
-              Object {
-                "path": "issourceloaded",
-                "title": "isSourceLoaded",
-              },
-              Object {
-                "path": "source",
-                "title": "source",
-              },
-              Object {
-                "path": "sourcedatatype",
-                "title": "sourceDataType",
-              },
-              Object {
-                "path": "tile",
-                "title": "tile",
-              },
-              Object {
-                "path": "coord",
-                "title": "coord",
-              },
-            ],
             "title": "Properties",
           },
           Object {
             "path": "mapdataevent-example",
-            "subnav": Array [],
             "title": "Example",
           },
         ],
@@ -2469,24 +836,6 @@ Array [
         "subnav": Array [
           Object {
             "path": "mapwheelevent-instance-members",
-            "subnav": Array [
-              Object {
-                "path": "mapwheelevent#originalevent",
-                "title": "originalEvent",
-              },
-              Object {
-                "path": "mapwheelevent#preventdefault",
-                "title": "preventDefault",
-              },
-              Object {
-                "path": "mapwheelevent#target",
-                "title": "target",
-              },
-              Object {
-                "path": "mapwheelevent#type",
-                "title": "type",
-              },
-            ],
             "title": "Instance members",
           },
         ],

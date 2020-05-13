@@ -143,7 +143,7 @@ ApiItemContents.propTypes = {
     constructorComment: PropTypes.shape({
         access: PropTypes.string
     }),
-    description: PropTypes.object,
+    description: PropTypes.oneOfType([PropTypes.string, PropTypes.object]),
     interface: PropTypes.string,
     params: PropTypes.array,
     properties: PropTypes.array,

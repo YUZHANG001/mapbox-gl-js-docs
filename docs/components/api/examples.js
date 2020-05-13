@@ -9,12 +9,12 @@ export default class Examples extends React.Component {
         return (
             <SectionWrapper title="Example" {...this.props}>
                 {section.examples.map((example, i) => (
-                    <React.Fragment key={i}>
+                    <div key={i} className="mt6">
                         {example.caption && <p>{md(example.caption)}</p>}
                         <Copyable lang="javascript">
                             {example.description}
                         </Copyable>
-                    </React.Fragment>
+                    </div>
                 ))}
             </SectionWrapper>
         );

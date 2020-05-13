@@ -87,7 +87,7 @@ module.exports = () => {
             }
         },
         devBrowserslist: false,
-        babelInclude: ['documentation'],
+        babelInclude: ['documentation', 'fuse.js'],
         webpackStaticIgnore: [/util\/util\.js$/]
     };
 

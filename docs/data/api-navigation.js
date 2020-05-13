@@ -86,72 +86,51 @@ function buildSubSubNav(item, section) {
     ) {
         arr.push({
             title: 'Parameters',
-            path: slug(`${section} Parameters`),
-            subnav: buildMembersSubNav(item.params)
+            path: slug(`${section} Parameters`)
         });
     }
     if (item.properties && item.properties.length > 0) {
         arr.push({
             title: 'Properties',
-            path: slug(`${section} Properties`),
-            subnav: buildMembersSubNav(item.properties)
+            path: slug(`${section} Properties`)
         });
     }
     if (item.examples && item.examples.length > 0) {
         arr.push({
             title: 'Example',
-            path: slug(`${section} Example`),
-            subnav: buildMembersSubNav(item.examples)
+            path: slug(`${section} Example`)
         });
     }
     if (item.members && item.members.static.length > 0) {
         arr.push({
             title: 'Static members',
-            path: slug(`${section} Static members`),
-            subnav: buildMembersSubNav(item.members.static)
+            path: slug(`${section} Static members`)
         });
     }
     if (item.members && item.members.instance.length > 0) {
         arr.push({
             title: 'Instance members',
-            path: slug(`${section} Instance members`),
-            subnav: buildMembersSubNav(item.members.instance)
+            path: slug(`${section} Instance members`)
         });
     }
     if (item.members && item.members.events.length > 0) {
         arr.push({
             title: 'Events',
-            path: slug(`${section} Events`),
-            subnav: buildMembersSubNav(item.members.events)
+            path: slug(`${section} Events`)
         });
     }
     if (item.returns && item.returns.length > 0) {
         arr.push({
             title: 'Returns',
-            path: slug(`${section} Returns`),
-            subnav: buildMembersSubNav(item.returns)
+            path: slug(`${section} Returns`)
         });
     }
     if (item.sees && item.sees.length > 0) {
         arr.push({
             title: 'Related',
-            path: slug(`${section} Related`),
-            subnav: buildMembersSubNav(item.sees)
+            path: slug(`${section} Related`)
         });
     }
 
     return arr;
-}
-
-function buildMembersSubNav(members) {
-    return members.reduce((arr, item) => {
-        if (item.name)
-            arr.push({
-                title: item.name,
-                path: item.namespace
-                    ? item.namespace.toLowerCase()
-                    : slug(item.name)
-            });
-        return arr;
-    }, []);
 }

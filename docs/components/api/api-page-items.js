@@ -19,7 +19,13 @@ export default class ApiPageItems extends React.Component {
         // 3. `Section` (for all other pages)
 
         if (children.length === 1) {
-            return <SingleSection key={children[0].name} {...children[0]} />;
+            return (
+                <SingleSection
+                    key={children[0].name}
+                    {...children[0]}
+                    {...this.props}
+                />
+            );
         }
         return children.map(child => {
             if (child.kind === 'note') {

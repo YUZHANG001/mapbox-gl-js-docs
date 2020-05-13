@@ -20,7 +20,8 @@ export default class Title extends React.Component {
                 className={classnames(
                     'py6 mt12 txt-m my0 no-h2-border scroll-margin-top',
                     {
-                        'txt-uppercase border-b border--gray-light color-gray': groupedSection
+                        'txt-uppercase border-b border--gray-light color-gray': groupedSection,
+                        'pb6 pt18': headingLevel === 2
                     }
                 )}
                 style={style}

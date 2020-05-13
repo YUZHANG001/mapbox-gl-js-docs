@@ -27,61 +27,63 @@ export default class Parameters extends React.Component {
                         </React.Fragment>
                         {param.properties && (
                             <div className="mt6 mb12 scroll-auto">
-                                <table className="fixed-table">
+                                <table className="table table--fixed table--compact">
                                     <colgroup>
                                         <col width="30%" />
                                         <col width="70%" />
                                     </colgroup>
                                     <thead>
-                                        <tr className="txt-bold bg-gray-faint">
-                                            <td
+                                        <tr className="bg-gray-faint">
+                                            <th
                                                 style={{
                                                     borderTopLeftRadius: '4px'
                                                 }}
                                             >
                                                 Name
-                                            </td>
-                                            <td
+                                            </th>
+                                            <th
                                                 style={{
                                                     borderTopRightRadius: '4px'
                                                 }}
                                             >
                                                 Description
-                                            </td>
+                                            </th>
                                         </tr>
                                     </thead>
-                                    <tbody className="mt6">
+                                    <tbody>
                                         {param.properties.map((property, i) => (
                                             <tr key={i}>
                                                 <td>
-                                                    <span className="txt-mono txt-bold txt-break-word">
+                                                    <div className="txt-mono txt-bold txt-break-word">
                                                         {property.name}
-                                                    </span>
-                                                    <br />
-                                                    <code className="color-gray txt-break-word">
+                                                    </div>
+
+                                                    <code className="inline-block color-gray txt-break-word">
                                                         {formatType(
                                                             property.type
                                                         )}
                                                     </code>
-                                                    <br />
+
                                                     {property.default && (
-                                                        <span className="color-gray txt-break-word">
-                                                            default{' '}
+                                                        <div className="color-gray txt-break-word">
+                                                            default:{' '}
                                                             <code>
                                                                 {
                                                                     property.default
                                                                 }
                                                             </code>
-                                                        </span>
+                                                        </div>
                                                     )}
                                                 </td>
-                                                <td>
-                                                    <span>
-                                                        {md(
-                                                            property.description,
-                                                            true
-                                                        )}
-                                                    </span>
+                                                <td
+                                                    style={{
+                                                        wordBreak: 'break-word'
+                                                    }}
+                                                >
+                                                    {md(
+                                                        property.description,
+                                                        true
+                                                    )}
                                                 </td>
                                             </tr>
                                         ))}
