@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionWrapper from './section-wrapper';
+import { toHtml, formatType } from '../../util/formatters';
 
 export default class Properties extends React.Component {
     render() {
-        const { section, formatType, md } = this.props;
+        const { section } = this.props;
         return (
             <SectionWrapper title="Properties" {...this.props}>
                 {section.properties.map((property, i) => (
@@ -23,7 +24,7 @@ export default class Properties extends React.Component {
                             </span>
                         )}
                         {property.description && (
-                            <span>: {md(property.description, true)}</span>
+                            <span>: {toHtml(property.description, true)}</span>
                         )}
                         {property.properties && (
                             <ul>
@@ -39,7 +40,7 @@ export default class Properties extends React.Component {
                                                 {')'}
                                             </span>
                                         )}
-                                        {md(property.description)}
+                                        {toHtml(property.description)}
                                     </li>
                                 ))}
                             </ul>
@@ -54,7 +55,5 @@ export default class Properties extends React.Component {
 Properties.propTypes = {
     section: PropTypes.shape({
         properties: PropTypes.array.isRequired
-    }).isRequired,
-    formatType: PropTypes.func.isRequired,
-    md: PropTypes.func.isRequired
+    }).isRequired
 };

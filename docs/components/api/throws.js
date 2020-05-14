@@ -1,17 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionWrapper from './section-wrapper';
+import { toHtml, formatType } from '../../util/formatters';
 
 export default class Throws extends React.Component {
     render() {
-        const { section, formatType, md } = this.props;
+        const { section } = this.props;
         return (
             <SectionWrapper title="Throws" {...this.props}>
                 <ul>
                     {section.throws.map((throws, i) => (
                         <li key={i}>
                             {formatType(throws.type)}:{' '}
-                            {md(throws.description, true)}
+                            {toHtml(throws.description, true)}
                         </li>
                     ))}
                 </ul>
@@ -23,7 +24,5 @@ export default class Throws extends React.Component {
 Throws.propTypes = {
     section: PropTypes.shape({
         throws: PropTypes.array
-    }).isRequired,
-    formatType: PropTypes.func.isRequired,
-    md: PropTypes.func.isRequired
+    }).isRequired
 };

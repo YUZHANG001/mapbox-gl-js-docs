@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { formatters } from '../../util/formatters';
 
 export default class Augments extends React.Component {
     render() {
-        const { section, formatters } = this.props;
+        const { section } = this.props;
         return (
             <div className="mt12">
                 Extends{' '}
@@ -24,8 +25,5 @@ export default class Augments extends React.Component {
 Augments.propTypes = {
     section: PropTypes.shape({
         augments: PropTypes.array.isRequired
-    }).isRequired,
-    formatters: PropTypes.shape({
-        autolink: PropTypes.func.isRequired
     }).isRequired
 };

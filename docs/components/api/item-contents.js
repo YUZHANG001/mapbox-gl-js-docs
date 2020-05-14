@@ -9,36 +9,10 @@ import Returns from './returns';
 import Throws from './throws';
 import Examples from './examples';
 import Related from './related';
-import formatters from '../../util/formatters';
+import { toHtml } from '../../util/formatters';
 import empty from '../../util/empty';
 
 class ApiItemContents extends React.Component {
-    md = (ast, inline) => {
-        if (
-            inline &&
-            ast &&
-            ast.children.length &&
-            ast.children[0].type === 'paragraph'
-        ) {
-            ast = {
-                type: 'root',
-                children: ast.children[0].children.concat(ast.children.slice(1))
-            };
-        }
-        return (
-            <span
-                dangerouslySetInnerHTML={{
-                    __html: `${formatters.markdown(ast)}`
-                }}
-            />
-        );
-    };
-    formatType = type => (
-        <span
-            dangerouslySetInnerHTML={{ __html: `${formatters.type(type)}` }}
-        />
-    );
-
     render() {
         const section = this.props;
         const membersList = (members, title) =>
@@ -53,12 +27,11 @@ class ApiItemContents extends React.Component {
 
         return (
             <React.Fragment>
-                {this.md(section.description)}
+                {toHtml(section.description)}
 
                 {!empty(section.augments) && (
                     <Augments
                         headingLevel={this.props.headingLevel}
-                        formatters={formatters}
                         section={section}
                     />
                 )}
@@ -69,7 +42,6 @@ class ApiItemContents extends React.Component {
                         section.constructorComment.access !== 'private') && (
                         <ClassName
                             headingLevel={this.props.headingLevel}
-                            formatters={formatters}
                             section={section}
                         />
                     )}
@@ -80,8 +52,6 @@ class ApiItemContents extends React.Component {
                         section.constructorComment.access !== 'private') && (
                         <Parameters
                             headingLevel={this.props.headingLevel}
-                            formatType={this.formatType}
-                            md={this.md}
                             section={section}
                         />
                     )}
@@ -89,8 +59,6 @@ class ApiItemContents extends React.Component {
                 {!empty(section.properties) && (
                     <Properties
                         headingLevel={this.props.headingLevel}
-                        formatType={this.formatType}
-                        md={this.md}
                         section={section}
                     />
                 )}
@@ -98,8 +66,6 @@ class ApiItemContents extends React.Component {
                 {section.returns && (
                     <Returns
                         headingLevel={this.props.headingLevel}
-                        formatType={this.formatType}
-                        md={this.md}
                         section={section}
                     />
                 )}
@@ -107,8 +73,6 @@ class ApiItemContents extends React.Component {
                 {!empty(section.throws) && (
                     <Throws
                         headingLevel={this.props.headingLevel}
-                        formatType={this.formatType}
-                        md={this.md}
                         section={section}
                     />
                 )}
@@ -116,7 +80,6 @@ class ApiItemContents extends React.Component {
                 {!empty(section.examples) && (
                     <Examples
                         headingLevel={this.props.headingLevel}
-                        md={this.md}
                         section={section}
                     />
                 )}
@@ -128,7 +91,6 @@ class ApiItemContents extends React.Component {
                 {!empty(section.sees) && (
                     <Related
                         headingLevel={this.props.headingLevel}
-                        md={this.md}
                         section={section}
                     />
                 )}

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import formatters from '../../util/formatters';
+import { formatters } from '../../util/formatters';
 import ApiItem from './item';
 import Icon from '@mapbox/mr-ui/icon';
 import classnames from 'classnames';

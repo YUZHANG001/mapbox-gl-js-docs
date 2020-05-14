@@ -2,15 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Copyable from '../../components/copyable.js';
 import SectionWrapper from './section-wrapper';
+import { toHtml } from '../../util/formatters';
 
 export default class Examples extends React.Component {
     render() {
-        const { section, md } = this.props;
+        const { section } = this.props;
         return (
             <SectionWrapper title="Example" {...this.props}>
                 {section.examples.map((example, i) => (
                     <div key={i} className="mt6">
-                        {example.caption && <p>{md(example.caption)}</p>}
+                        {example.caption && <p>{toHtml(example.caption)}</p>}
                         <Copyable lang="javascript">
                             {example.description}
                         </Copyable>
@@ -29,6 +30,5 @@ Examples.propTypes = {
                 description: PropTypes.string.isRequired
             })
         ).isRequired
-    }).isRequired,
-    md: PropTypes.func.isRequired
+    }).isRequired
 };

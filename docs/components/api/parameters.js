@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import SectionWrapper from './section-wrapper';
+import { toHtml, formatType } from '../../util/formatters';
 
 export default class Parameters extends React.Component {
     render() {
-        const { section, formatType, md } = this.props;
+        const { section } = this.props;
         return (
             <SectionWrapper title="Parameters" {...this.props}>
                 {section.params.map((param, i) => (
@@ -23,7 +24,7 @@ export default class Parameters extends React.Component {
                                     {')'}
                                 </span>
                             )}
-                            {md(param.description, true)}
+                            {toHtml(param.description, true)}
                         </React.Fragment>
                         {param.properties && (
                             <div className="mt6 mb12 scroll-auto">
@@ -80,7 +81,7 @@ export default class Parameters extends React.Component {
                                                         wordBreak: 'break-word'
                                                     }}
                                                 >
-                                                    {md(
+                                                    {toHtml(
                                                         property.description,
                                                         true
                                                     )}
@@ -101,7 +102,5 @@ export default class Parameters extends React.Component {
 Parameters.propTypes = {
     section: PropTypes.shape({
         params: PropTypes.array.isRequired
-    }).isRequired,
-    formatType: PropTypes.func.isRequired,
-    md: PropTypes.func.isRequired
+    }).isRequired
 };

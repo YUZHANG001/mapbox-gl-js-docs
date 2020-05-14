@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { formatters } from '../../util/formatters';
 
 export default class ClassName extends React.Component {
     render() {
-        const { section, formatters } = this.props;
+        const { section } = this.props;
         return (
             <div
                 className="txt-code my18 py12 px12 txt-s"
@@ -20,8 +21,5 @@ export default class ClassName extends React.Component {
 ClassName.propTypes = {
     section: PropTypes.shape({
         name: PropTypes.string.isRequired
-    }).isRequired,
-    formatters: PropTypes.shape({
-        parameters: PropTypes.func.isRequired
     }).isRequired
 };
