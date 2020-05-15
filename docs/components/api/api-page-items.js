@@ -5,7 +5,7 @@ import ApiItemContents from './item-contents';
 import SectionWrapper from './section-wrapper';
 import Github from './github';
 import Feedback from '../feedback';
-import ApiPageDescription from './api-page-description';
+import { toHtml } from '../../util/formatters';
 
 const apiFilterItems = require('../../util/api-filter-items.js');
 
@@ -15,7 +15,7 @@ export default class ApiPageItems extends React.Component {
     renderDescription = () => {
         const description = this.pageDocSource[0].description || false;
         if (description)
-            return <ApiPageDescription pageDescription={description} />;
+            return <React.Fragment>{toHtml(description)}</React.Fragment>;
     };
 
     render() {
