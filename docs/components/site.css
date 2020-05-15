@@ -96,3 +96,8 @@ pre + .style-spec-property {
 .item-member table {
     background: #fbfcfe !important;
 }
+
+/* remove bottom margin from example code block */
+.api-example pre {
+    margin-bottom: 0 !important;
+}

@@ -10,7 +10,7 @@ export default class Examples extends React.Component {
         return (
             <SectionWrapper title="Example" {...this.props}>
                 {section.examples.map((example, i) => (
-                    <div key={i} className="mt6">
+                    <div key={i} className="mb12 api-example">
                         {example.caption && <p>{toHtml(example.caption)}</p>}
                         <Copyable lang="javascript">
                             {example.description}
