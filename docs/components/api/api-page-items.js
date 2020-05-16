@@ -5,29 +5,33 @@ import ApiItemContents from './item-contents';
 import SectionWrapper from './section-wrapper';
 import Github from './github';
 import Feedback from '../feedback';
+import { toHtml } from '../../util/formatters';
 
 const apiFilterItems = require('../../util/api-filter-items.js');
 
 export default class ApiPageItems extends React.Component {
-    render() {
-        const pageDocSource = apiFilterItems(this.props.pageTitle);
-        const children = pageDocSource[0].members.static;
-
+    pageDocSource = apiFilterItems(this.props.pageTitle);
+    children = this.pageDocSource[0].members.static;
+    renderDescription = () => {
+        const description = this.pageDocSource[0].description || false;
+        if (description) return toHtml(description);
+    };
+    renderItems = () => {
         // There are 3 layouts based on the content:
         // 1. `SingleSection` (for Maps page)
         // 2. `GroupedSection` (for Properties and options page)
         // 3. `Section` (for all other pages)
 
-        if (children.length === 1) {
+        if (this.children.length === 1) {
             return (
                 <SingleSection
-                    key={children[0].name}
-                    {...children[0]}
+                    key={this.children[0].name}
+                    {...this.children[0]}
                     {...this.props}
                 />
             );
         }
-        return children.map(child => {
+        return this.children.map(child => {
             if (child.kind === 'note') {
                 return (
                     <GroupedSection
@@ -41,6 +45,15 @@ export default class ApiPageItems extends React.Component {
                 return <Section key={child.name} {...this.props} {...child} />;
             }
         });
+    };
+
+    render() {
+        return (
+            <React.Fragment>
+                {this.renderDescription()}
+                {this.renderItems()}
+            </React.Fragment>
+        );
     }
 }
 
