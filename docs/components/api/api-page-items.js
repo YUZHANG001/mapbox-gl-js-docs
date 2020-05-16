@@ -14,11 +14,9 @@ export default class ApiPageItems extends React.Component {
     children = this.pageDocSource[0].members.static;
     renderDescription = () => {
         const description = this.pageDocSource[0].description || false;
-        if (description)
-            return <React.Fragment>{toHtml(description)}</React.Fragment>;
+        if (description) return toHtml(description);
     };
-
-    render() {
+    renderItems = () => {
         // There are 3 layouts based on the content:
         // 1. `SingleSection` (for Maps page)
         // 2. `GroupedSection` (for Properties and options page)
@@ -26,38 +24,36 @@ export default class ApiPageItems extends React.Component {
 
         if (this.children.length === 1) {
             return (
-                <React.Fragment>
-                    {this.renderDescription()}
-                    <SingleSection
-                        key={this.children[0].name}
-                        {...this.children[0]}
-                        {...this.props}
-                    />
-                </React.Fragment>
+                <SingleSection
+                    key={this.children[0].name}
+                    {...this.children[0]}
+                    {...this.props}
+                />
             );
         }
         return this.children.map(child => {
             if (child.kind === 'note') {
                 return (
-                    <React.Fragment key={child.name}>
-                        {this.renderDescription()}
-                        <GroupedSection
-                            key={child.name}
-                            location={this.props.location}
-                            members={child.members}
-                            name={child.name}
-                        />
-                    </React.Fragment>
+                    <GroupedSection
+                        key={child.name}
+                        location={this.props.location}
+                        members={child.members}
+                        name={child.name}
+                    />
                 );
             } else {
-                return (
-                    <React.Fragment key={child.name}>
-                        {this.renderDescription()}
-                        <Section key={child.name} {...this.props} {...child} />
-                    </React.Fragment>
-                );
+                return <Section key={child.name} {...this.props} {...child} />;
             }
         });
+    };
+
+    render() {
+        return (
+            <React.Fragment>
+                {this.renderDescription()}
+                {this.renderItems()}
+            </React.Fragment>
+        );
     }
 }
 
