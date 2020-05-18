@@ -1,14 +1,17 @@
 ---
 title: Introduction
-description: Introduction to Mapbox GL JS, a JavaScript library that uses WebGL to render interactive maps from vector tiles and Mapbox styles.
+description: The Mapbox GL JS API documentation to render interactive maps from vector tiles and Mapbox styles.
+contentType: API
+language:
+    - JavaScript
 prependJs:
   - "import OverviewHeader from '@mapbox/dr-ui/overview-header';"
   - "import Quickstart from '../../components/quickstart';"
+  - "import ExampleCode from '../../components/example_code';"
+  - "import SimpleMapHtml from '../example/simple-map.html';"
   - "import Copyable from '../../components/copyable';"
   - "import urls from '../../components/urls';"
   - "import {version} from '../../../mapbox-gl-js/package.json';"
-pathname: /mapbox-gl-js/overview/
-contentType: API
 ---
 
 {{
@@ -29,13 +32,38 @@ contentType: API
 
 Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps from [vector tiles](https://docs.mapbox.com/help/glossary/vector-tiles/) and [Mapbox styles](/mapbox-gl-js/style-spec/). It is part of the Mapbox GL ecosystem, which includes [Mapbox Mobile](https://www.mapbox.com/mobile/), a compatible renderer written in C++ with bindings for desktop and mobile platforms.
 
+
 ## Quickstart
+
+{{
+    <ExampleCode 
+        frontMatter={frontMatter}
+        location={location}
+        html={SimpleMapHtml}
+        displaySnippet={false}
+    />
+}}
 
 To get started, you need an [access token](https://docs.mapbox.com/help/how-mapbox-works/access-tokens/) and a [style URL](https://docs.mapbox.com/help/glossary/style-url/). You can choose from one of our [professionally designed styles](https://docs.mapbox.com/api/maps/#styles) or create your own using [Mapbox Studio](https://www.mapbox.com/studio/).
 
 {{
 <Quickstart />
 }}
+
+
+## Reading this documentation
+
+This documentation is divided into several sections: 
+
+* [**Map**](./map/). The `Map` object represents the map on your page. It lets you access methods and properties for interacting with the map's style and layers, respond to events, and manipulate the user's perspective with the camera.
+* [**Properties and options**](./properties/). This section describes Mapbox GL JS's global properties and options that you might want to access while initializing your map or accessing information about its status.
+* [**Markers and controls**](./markers/). This section describes the user interface elements that you can add to your map. The items in this section exist outside of the map's `canvas` element.
+* [**Geography and geometry**](./geography/). This section includes general utilities and types that relate to working with and manipulating geographic information or geometries.
+* [**User interaction handlers**](./handlers/). The items in this section relate to the ways in which the map responds to user input.
+* [**Sources**](./sources/). This section describes the source types Mapbox GL JS can handle in addition to the ones described in the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/).
+* [**Events**](./events/). This section describes the different types of events that Mapbox GL JS can raise.
+
+Each section describes classes or objects as well as their **properties**, **parameters**, **instance members**, and associated **events**. Many sections also include inline code examples and related resources.
 
 
 ## CSP Directives

@@ -20,7 +20,6 @@ import Search from '@mapbox/dr-ui/search';
 import * as Sentry from '@sentry/browser';
 // NavigationAccordion datasets
 import apiNavigation from '@mapbox/batfish/data/api-navigation'; // eslint-disable-line
-import { overviewNavigation } from '../data/overview-navigation';
 import { styleSpecNavigation } from '../data/style-spec-navigation';
 import redirectApiRef from '../util/api-ref-redirect';
 
@@ -191,13 +190,7 @@ class PageShell extends React.Component {
     }
 
     getSidebarProps(activeTab) {
-        if (activeTab === 'overview') {
-            return this.accordionNavProps(
-                overviewNavigation,
-                'overview',
-                'Overview'
-            );
-        } else if (activeTab === 'examples') {
+        if (activeTab === 'examples') {
             return this.sectionedNavProps(
                 activeTab,
                 this.getExampleSections(tags)

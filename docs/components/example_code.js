@@ -15,6 +15,9 @@ const css = `\tbody { margin: 0; padding: 0; }
 \t#map { position: absolute; top: 0; bottom: 0; width: 100%; }`;
 
 export default class ExampleCode extends React.Component {
+    static defaultProps = {
+        displaySnippet: true
+    };
     constructor(props) {
         super(props);
         this.state = {
@@ -78,11 +81,33 @@ ${html}
 </html>`;
     }
 
-    render() {
-        const { frontMatter, html } = this.props;
-
+    renderSnippet() {
+        const { html } = this.props;
         const code = this.displayHTML(html);
         const parsedCode = helpers.extractor(code);
+        return (
+            <div className="bg-white">
+                <div id="code" className="relative">
+                    <CodeSnippet
+                        code={this.displayHTML(html)}
+                        highlighter={() => highlightHtml}
+                        edit={{
+                            frontMatter: this.props.frontMatter,
+                            head: viewport,
+                            js: parsedCode.js,
+                            html: parsedCode.html,
+                            css: parsedCode.css,
+                            resources: parsedCode.resources
+                        }}
+                    />
+                </div>
+            </div>
+        );
+    }
+
+    render() {
+        const { frontMatter } = this.props;
+
         return (
             <div className="prose">
                 <div className="mb36">{md(frontMatter.description)}</div>
@@ -118,22 +143,7 @@ ${html}
                     />
                 )}
 
-                <div className="bg-white">
-                    <div id="code" className="relative">
-                        <CodeSnippet
-                            code={this.displayHTML(html)}
-                            highlighter={() => highlightHtml}
-                            edit={{
-                                frontMatter: this.props.frontMatter,
-                                head: viewport,
-                                js: parsedCode.js,
-                                html: parsedCode.html,
-                                css: parsedCode.css,
-                                resources: parsedCode.resources
-                            }}
-                        />
-                    </div>
-                </div>
+                {this.props.displaySnippet && this.renderSnippet()}
             </div>
         );
     }
@@ -163,5 +173,6 @@ ExampleCode.propTypes = {
     }),
     location: PropTypes.shape({
         pathname: PropTypes.string
-    })
+    }),
+    displaySnippet: PropTypes.bool
 };

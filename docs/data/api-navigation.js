@@ -7,8 +7,30 @@ const apiFilterItems = require('../util/api-filter-items.js');
 
 module.exports = [
     {
-        title: 'API Reference',
-        path: ''
+        title: 'Introduction',
+        path: '',
+        subnav: [
+            {
+                title: 'Quickstart',
+                path: 'quickstart'
+            },
+            {
+                title: 'Reading this documentation',
+                path: 'reading-this-documentation'
+            },
+            {
+                title: 'CSP Directives',
+                path: 'csp-directives'
+            },
+            {
+                title: 'Referrer Policies',
+                path: 'referrer-policies'
+            },
+            {
+                title: 'Mapbox CSS',
+                path: 'mapbox-css'
+            }
+        ]
     },
     {
         title: 'Map',

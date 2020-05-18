@@ -1,7 +1,4 @@
 const tabOrder = {
-    overview: {
-        title: 'Overview'
-    },
     api: {
         title: 'API Reference'
     },
