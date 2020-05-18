@@ -9,17 +9,12 @@ export default class SectionWrapper extends React.Component {
             headingLevel,
             section,
             title,
-            titleComponent,
-            groupedSection
+            titleComponent
         } = this.props;
         return (
             <div className="section section-h2">
                 {title && (
-                    <Title
-                        groupedSection={groupedSection}
-                        headingLevel={headingLevel}
-                        section={section}
-                    >
+                    <Title headingLevel={headingLevel} section={section}>
                         {title}
                     </Title>
                 )}
@@ -35,14 +30,9 @@ export default class SectionWrapper extends React.Component {
 }
 
 SectionWrapper.propTypes = {
-    groupedSection: false
-};
-
-SectionWrapper.propTypes = {
     children: PropTypes.node.isRequired,
     title: PropTypes.string,
     titleComponent: PropTypes.node,
     section: PropTypes.object,
-    headingLevel: PropTypes.number,
-    groupedSection: PropTypes.bool
+    headingLevel: PropTypes.number
 };

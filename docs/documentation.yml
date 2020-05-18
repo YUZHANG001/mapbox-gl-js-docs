@@ -9,29 +9,24 @@ toc:
     description: |
       Mapbox GL JS's global properties and options that you can access while initializing your map or accessing information about its status.
     children:
-      - name: Properties
-        children:
-          - accessToken
-          - baseApiUrl
-          - workerCount
-          - maxParallelImageRequests
-      - name: Utilities
-        children:
-          - supported
-          - version
-          - clearStorage
-          - CustomLayerInterface
-          - StyleImageInterface
-          - RequestParameters
-          - prewarm
-          - clearPrewarmedResources
-      - name: Options
-        children:
-          - AnimationOptions
-          - CameraOptions
-          - PaddingOptions
-          - setRTLTextPlugin
-          - getRTLTextPluginStatus
+      - accessToken
+      - baseApiUrl
+      - workerCount
+      - maxParallelImageRequests
+      - supported
+      - version
+      - setRTLTextPlugin
+      - getRTLTextPluginStatus
+      - clearStorage
+      - AnimationOptions
+      - CameraOptions
+      - PaddingOptions
+      - RequestParameters
+      - StyleImageInterface
+      - CustomLayerInterface
+      - prewarm
+      - clearPrewarmedResources
+
   - name: Markers and controls
     page: 'markers'
     description: |
@@ -45,6 +40,7 @@ toc:
       - AttributionControl
       - ScaleControl
       - FullscreenControl
+
   - name: Geography and geometry
     page: 'geography'
     description: |
@@ -72,6 +68,7 @@ toc:
       - DoubleClickZoomHandler
       - TouchZoomRotateHandler
       - TouchPitchHandler
+
   - name: Sources
     page: 'sources'
     description: |
@@ -82,6 +79,7 @@ toc:
       - ImageSource
       - CanvasSource
       - CanvasSourceOptions
+
   - name: Events
     page: 'events'
     description: |

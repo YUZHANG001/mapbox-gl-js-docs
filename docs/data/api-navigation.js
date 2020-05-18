@@ -75,25 +75,11 @@ module.exports = [
 
 function buldSubNav(section) {
     const items = apiFilterItems(section)[0].members.static;
-    return items.map(item => {
-        let groupedSection;
-        if (item.kind === 'note') {
-            const grouped = item.members.static;
-            groupedSection = grouped.map(group => {
-                return {
-                    title: group.name,
-                    path: slug(group.name),
-                    subnav: buildSubSubNav(group, group.name)
-                };
-            });
-        }
-
-        return {
-            title: item.name,
-            path: slug(item.namespace),
-            subnav: groupedSection || buildSubSubNav(item, item.name)
-        };
-    });
+    return items.map(item => ({
+        title: item.name,
+        path: slug(item.namespace),
+        subnav: buildSubSubNav(item, item.name)
+    }));
 }
 
 function buildSubSubNav(item, section) {
@@ -115,6 +101,12 @@ function buildSubSubNav(item, section) {
         arr.push({
             title: 'Properties',
             path: slug(`${section} Properties`)
+        });
+    }
+    if (item.returns && item.returns.length > 0) {
+        arr.push({
+            title: 'Returns',
+            path: slug(`${section} Returns`)
         });
     }
     if (item.examples && item.examples.length > 0) {
@@ -139,12 +131,6 @@ function buildSubSubNav(item, section) {
         arr.push({
             title: 'Events',
             path: slug(`${section} Events`)
-        });
-    }
-    if (item.returns && item.returns.length > 0) {
-        arr.push({
-            title: 'Returns',
-            path: slug(`${section} Returns`)
         });
     }
     if (item.sees && item.sees.length > 0) {

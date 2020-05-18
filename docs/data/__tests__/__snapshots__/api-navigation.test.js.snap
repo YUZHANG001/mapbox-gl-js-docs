@@ -58,271 +58,253 @@ Array [
     "path": "properties",
     "subnav": Array [
       Object {
-        "path": "properties",
+        "path": "accesstoken",
         "subnav": Array [
           Object {
-            "path": "accesstoken",
-            "subnav": Array [
-              Object {
-                "path": "accesstoken-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "accesstoken-returns",
-                "title": "Returns",
-              },
-              Object {
-                "path": "accesstoken-related",
-                "title": "Related",
-              },
-            ],
-            "title": "accessToken",
+            "path": "accesstoken-returns",
+            "title": "Returns",
           },
           Object {
-            "path": "baseapiurl",
-            "subnav": Array [
-              Object {
-                "path": "baseapiurl-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "baseapiurl-returns",
-                "title": "Returns",
-              },
-            ],
-            "title": "baseApiUrl",
+            "path": "accesstoken-example",
+            "title": "Example",
           },
           Object {
-            "path": "workercount",
-            "subnav": Array [
-              Object {
-                "path": "workercount-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "workercount-returns",
-                "title": "Returns",
-              },
-            ],
-            "title": "workerCount",
-          },
-          Object {
-            "path": "maxparallelimagerequests",
-            "subnav": Array [
-              Object {
-                "path": "maxparallelimagerequests-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "maxparallelimagerequests-returns",
-                "title": "Returns",
-              },
-            ],
-            "title": "maxParallelImageRequests",
+            "path": "accesstoken-related",
+            "title": "Related",
           },
         ],
-        "title": "Properties",
+        "title": "accessToken",
       },
       Object {
-        "path": "utilities",
+        "path": "baseapiurl",
         "subnav": Array [
           Object {
-            "path": "supported",
-            "subnav": Array [
-              Object {
-                "path": "supported-parameters",
-                "title": "Parameters",
-              },
-              Object {
-                "path": "supported-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "supported-returns",
-                "title": "Returns",
-              },
-              Object {
-                "path": "supported-related",
-                "title": "Related",
-              },
-            ],
-            "title": "supported",
+            "path": "baseapiurl-returns",
+            "title": "Returns",
           },
           Object {
-            "path": "version",
-            "subnav": Array [],
-            "title": "version",
-          },
-          Object {
-            "path": "clearstorage",
-            "subnav": Array [
-              Object {
-                "path": "clearstorage-parameters",
-                "title": "Parameters",
-              },
-              Object {
-                "path": "clearstorage-example",
-                "title": "Example",
-              },
-            ],
-            "title": "clearStorage",
-          },
-          Object {
-            "path": "customlayerinterface",
-            "subnav": Array [
-              Object {
-                "path": "customlayerinterface-properties",
-                "title": "Properties",
-              },
-              Object {
-                "path": "customlayerinterface-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "customlayerinterface-instance-members",
-                "title": "Instance members",
-              },
-            ],
-            "title": "CustomLayerInterface",
-          },
-          Object {
-            "path": "styleimageinterface",
-            "subnav": Array [
-              Object {
-                "path": "styleimageinterface-properties",
-                "title": "Properties",
-              },
-              Object {
-                "path": "styleimageinterface-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "styleimageinterface-instance-members",
-                "title": "Instance members",
-              },
-              Object {
-                "path": "styleimageinterface-related",
-                "title": "Related",
-              },
-            ],
-            "title": "StyleImageInterface",
-          },
-          Object {
-            "path": "requestparameters",
-            "subnav": Array [
-              Object {
-                "path": "requestparameters-properties",
-                "title": "Properties",
-              },
-              Object {
-                "path": "requestparameters-example",
-                "title": "Example",
-              },
-            ],
-            "title": "RequestParameters",
-          },
-          Object {
-            "path": "prewarm",
-            "subnav": Array [
-              Object {
-                "path": "prewarm-example",
-                "title": "Example",
-              },
-            ],
-            "title": "prewarm",
-          },
-          Object {
-            "path": "clearprewarmedresources",
-            "subnav": Array [
-              Object {
-                "path": "clearprewarmedresources-example",
-                "title": "Example",
-              },
-            ],
-            "title": "clearPrewarmedResources",
+            "path": "baseapiurl-example",
+            "title": "Example",
           },
         ],
-        "title": "Utilities",
+        "title": "baseApiUrl",
       },
       Object {
-        "path": "options",
+        "path": "workercount",
         "subnav": Array [
           Object {
-            "path": "animationoptions",
-            "subnav": Array [
-              Object {
-                "path": "animationoptions-properties",
-                "title": "Properties",
-              },
-            ],
-            "title": "AnimationOptions",
+            "path": "workercount-returns",
+            "title": "Returns",
           },
           Object {
-            "path": "cameraoptions",
-            "subnav": Array [
-              Object {
-                "path": "cameraoptions-properties",
-                "title": "Properties",
-              },
-              Object {
-                "path": "cameraoptions-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "cameraoptions-related",
-                "title": "Related",
-              },
-            ],
-            "title": "CameraOptions",
-          },
-          Object {
-            "path": "paddingoptions",
-            "subnav": Array [
-              Object {
-                "path": "paddingoptions-properties",
-                "title": "Properties",
-              },
-              Object {
-                "path": "paddingoptions-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "paddingoptions-related",
-                "title": "Related",
-              },
-            ],
-            "title": "PaddingOptions",
-          },
-          Object {
-            "path": "setrtltextplugin",
-            "subnav": Array [
-              Object {
-                "path": "setrtltextplugin-parameters",
-                "title": "Parameters",
-              },
-              Object {
-                "path": "setrtltextplugin-example",
-                "title": "Example",
-              },
-              Object {
-                "path": "setrtltextplugin-related",
-                "title": "Related",
-              },
-            ],
-            "title": "setRTLTextPlugin",
-          },
-          Object {
-            "path": "getrtltextpluginstatus",
-            "subnav": Array [
-              Object {
-                "path": "getrtltextpluginstatus-example",
-                "title": "Example",
-              },
-            ],
-            "title": "getRTLTextPluginStatus",
+            "path": "workercount-example",
+            "title": "Example",
           },
         ],
-        "title": "Options",
+        "title": "workerCount",
+      },
+      Object {
+        "path": "maxparallelimagerequests",
+        "subnav": Array [
+          Object {
+            "path": "maxparallelimagerequests-returns",
+            "title": "Returns",
+          },
+          Object {
+            "path": "maxparallelimagerequests-example",
+            "title": "Example",
+          },
+        ],
+        "title": "maxParallelImageRequests",
+      },
+      Object {
+        "path": "supported",
+        "subnav": Array [
+          Object {
+            "path": "supported-parameters",
+            "title": "Parameters",
+          },
+          Object {
+            "path": "supported-returns",
+            "title": "Returns",
+          },
+          Object {
+            "path": "supported-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "supported-related",
+            "title": "Related",
+          },
+        ],
+        "title": "supported",
+      },
+      Object {
+        "path": "version",
+        "subnav": Array [],
+        "title": "version",
+      },
+      Object {
+        "path": "setrtltextplugin",
+        "subnav": Array [
+          Object {
+            "path": "setrtltextplugin-parameters",
+            "title": "Parameters",
+          },
+          Object {
+            "path": "setrtltextplugin-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "setrtltextplugin-related",
+            "title": "Related",
+          },
+        ],
+        "title": "setRTLTextPlugin",
+      },
+      Object {
+        "path": "getrtltextpluginstatus",
+        "subnav": Array [
+          Object {
+            "path": "getrtltextpluginstatus-example",
+            "title": "Example",
+          },
+        ],
+        "title": "getRTLTextPluginStatus",
+      },
+      Object {
+        "path": "clearstorage",
+        "subnav": Array [
+          Object {
+            "path": "clearstorage-parameters",
+            "title": "Parameters",
+          },
+          Object {
+            "path": "clearstorage-example",
+            "title": "Example",
+          },
+        ],
+        "title": "clearStorage",
+      },
+      Object {
+        "path": "animationoptions",
+        "subnav": Array [
+          Object {
+            "path": "animationoptions-properties",
+            "title": "Properties",
+          },
+        ],
+        "title": "AnimationOptions",
+      },
+      Object {
+        "path": "cameraoptions",
+        "subnav": Array [
+          Object {
+            "path": "cameraoptions-properties",
+            "title": "Properties",
+          },
+          Object {
+            "path": "cameraoptions-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "cameraoptions-related",
+            "title": "Related",
+          },
+        ],
+        "title": "CameraOptions",
+      },
+      Object {
+        "path": "paddingoptions",
+        "subnav": Array [
+          Object {
+            "path": "paddingoptions-properties",
+            "title": "Properties",
+          },
+          Object {
+            "path": "paddingoptions-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "paddingoptions-related",
+            "title": "Related",
+          },
+        ],
+        "title": "PaddingOptions",
+      },
+      Object {
+        "path": "requestparameters",
+        "subnav": Array [
+          Object {
+            "path": "requestparameters-properties",
+            "title": "Properties",
+          },
+          Object {
+            "path": "requestparameters-example",
+            "title": "Example",
+          },
+        ],
+        "title": "RequestParameters",
+      },
+      Object {
+        "path": "styleimageinterface",
+        "subnav": Array [
+          Object {
+            "path": "styleimageinterface-properties",
+            "title": "Properties",
+          },
+          Object {
+            "path": "styleimageinterface-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "styleimageinterface-instance-members",
+            "title": "Instance members",
+          },
+          Object {
+            "path": "styleimageinterface-related",
+            "title": "Related",
+          },
+        ],
+        "title": "StyleImageInterface",
+      },
+      Object {
+        "path": "customlayerinterface",
+        "subnav": Array [
+          Object {
+            "path": "customlayerinterface-properties",
+            "title": "Properties",
+          },
+          Object {
+            "path": "customlayerinterface-example",
+            "title": "Example",
+          },
+          Object {
+            "path": "customlayerinterface-instance-members",
+            "title": "Instance members",
+          },
+        ],
+        "title": "CustomLayerInterface",
+      },
+      Object {
+        "path": "prewarm",
+        "subnav": Array [
+          Object {
+            "path": "prewarm-example",
+            "title": "Example",
+          },
+        ],
+        "title": "prewarm",
+      },
+      Object {
+        "path": "clearprewarmedresources",
+        "subnav": Array [
+          Object {
+            "path": "clearprewarmedresources-example",
+            "title": "Example",
+          },
+        ],
+        "title": "clearPrewarmedResources",
       },
     ],
     "title": "Properties and options",

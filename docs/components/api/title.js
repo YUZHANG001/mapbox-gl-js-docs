@@ -5,14 +5,9 @@ import classnames from 'classnames';
 
 export default class Title extends React.Component {
     render() {
-        const { children, section, headingLevel, groupedSection } = this.props;
+        const { children, section, headingLevel } = this.props;
         const id = slug(`${section ? section.name : ''} ${children}`);
         const HeadingLevel = `h${headingLevel}`;
-        const style = {
-            lineHeight: '24px',
-            fontSize: groupedSection ? 18 : 15,
-            letterSpacing: groupedSection ? '0.05em' : undefined
-        };
 
         return (
             <HeadingLevel
@@ -20,16 +15,16 @@ export default class Title extends React.Component {
                 className={classnames(
                     'py6 mt12 txt-m my0 no-h2-border scroll-margin-top',
                     {
-                        'txt-uppercase border-b border--gray-light color-gray': groupedSection,
                         'pb6 pt18': headingLevel === 2
                     }
                 )}
-                style={style}
+                style={{
+                    lineHeight: '24px',
+                    fontSize: '15px'
+                }}
             >
                 <a
-                    className={classnames('unprose block color-blue-on-hover', {
-                        'txt-bold': !groupedSection
-                    })}
+                    className="unprose block color-blue-on-hover txt-bold"
                     href={`#${id}`}
                 >
                     {children}
@@ -44,6 +39,5 @@ Title.propTypes = {
     section: PropTypes.shape({
         name: PropTypes.string
     }),
-    headingLevel: PropTypes.number,
-    groupedSection: PropTypes.bool // grouped section is for pages like "Properties and options" to make the section headings large
+    headingLevel: PropTypes.number
 };
