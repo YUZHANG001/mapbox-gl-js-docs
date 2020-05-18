@@ -11,7 +11,10 @@ class MarkdownPageshell extends React.Component {
                     {this.props.location.pathname !==
                         '/mapbox-gl-js/overview/' && (
                         <h1 className="txt-fancy">
-                            {this.props.frontMatter.title}
+                            {/* Hack to get around naming conflict with "Map" section of documentation.yml and the name of the "Map" class. */}
+                            {this.props.frontMatter.title === 'Map class'
+                                ? 'Map'
+                                : this.props.frontMatter.title}
                         </h1>
                     )}
                     {this.props.children}

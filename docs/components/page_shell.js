@@ -73,7 +73,12 @@ class PageShell extends React.Component {
             tag: section.tag || undefined
         }));
         const subtitles = nav
-            .filter(section => section.title === frontMatter.title)
+            .filter(section => {
+                // Hack to get around naming conflict with "Map" section of documentation.yml and the name of the "Map" class.
+                const coercedTitle =
+                    section.title === 'Map' ? 'Map class' : section.title;
+                return coercedTitle === frontMatter.title;
+            })
             .map(section => {
                 if (!section.subnav) return;
 

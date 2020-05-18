@@ -11,10 +11,10 @@ module.exports = [
         path: ''
     },
     {
-        title: 'Map class',
+        title: 'Map',
         path: 'map',
         subnav: buildSubSubNav(
-            apiFilterItems('Map class')[0].members.static[0],
+            apiFilterItems('Map class')[0].members.static[0], // Hack to resolve naming documentaiton.yml conflict b/w the "Map" class and the "Map" section
             'map'
         )
     },
