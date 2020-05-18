@@ -4,7 +4,29 @@ exports[`api-navigation 1`] = `
 Array [
   Object {
     "path": "",
-    "title": "API Reference",
+    "subnav": Array [
+      Object {
+        "path": "quickstart",
+        "title": "Quickstart",
+      },
+      Object {
+        "path": "reading-this-documentation",
+        "title": "Reading this documentation",
+      },
+      Object {
+        "path": "csp-directives",
+        "title": "CSP Directives",
+      },
+      Object {
+        "path": "referrer-policies",
+        "title": "Referrer Policies",
+      },
+      Object {
+        "path": "mapbox-css",
+        "title": "Mapbox CSS",
+      },
+    ],
+    "title": "Introduction",
   },
   Object {
     "path": "map",
@@ -30,7 +52,7 @@ Array [
         "title": "Related",
       },
     ],
-    "title": "Map class",
+    "title": "Map",
   },
   Object {
     "path": "properties",
