@@ -37,8 +37,8 @@ Mapbox GL JS is a JavaScript library that uses WebGL to render interactive maps 
 
 {{
     <ExampleCode
-        frontMatter={frontMatter}
-        location={location}
+        frontMatter={this.props.frontMatter}
+        location={this.props.location}
         html={SimpleMapHtml}
         displaySnippet={false}
     />
