@@ -18,6 +18,7 @@ import plugins from '../data/plugins';
 import { routeToPrefixed } from '@mapbox/batfish/modules/route-to';
 import Search from '@mapbox/dr-ui/search';
 import * as Sentry from '@sentry/browser';
+import classnames from 'classnames';
 // NavigationAccordion datasets
 import apiNavigation from '@mapbox/batfish/data/api-navigation'; // eslint-disable-line
 import { styleSpecNavigation } from '../data/style-spec-navigation';
@@ -302,23 +303,16 @@ class PageShell extends React.Component {
                         sidebarContentStickyTop={60}
                         sidebarContentStickyTopNarrow={0}
                         currentPath={location.pathname}
-                        interactiveClass={sidebarProps.interactiveClass}
                         sideBarColSize={sidebarProps.sidebarColSize || 0}
                         sidebarStackedOnNarrowScreens={
                             sidebarProps.sidebarStackedOnNarrowScreens
                         }
                     >
                         <div
-                            className={`static-header-page ${activeTab}-page ${
-                                activeTab !== 'examples' ||
-                                activeTab !== 'plugins'
-                                    ? ''
-                                    : 'prose'
-                            } ${
-                                activeTab === 'overview'
-                                    ? 'mt60 pt30 mt0-mm pt0-mm'
-                                    : 'mt30 mt0-mm'
-                            }`}
+                            className={classnames(`${activeTab}-page `, {
+                                'mt60 pt30 mt0-mm pt0-mm': activeTab === 'api', // clear navigationbar
+                                'mt30 mt0-mm': activeTab !== 'api'
+                            })}
                         >
                             {this.props.children}
                         </div>
