@@ -55,12 +55,12 @@ To get started, you need an [access token](https://docs.mapbox.com/help/how-mapb
 
 This documentation is divided into several sections:
 
-* [**Map**](/mapbox-gl-js/api/map/). The `Map` object represents the map on your page. It lets you access methods and properties for interacting with the map's style and layers, respond to events, and manipulate the user's perspective with the camera.
+* [**Map**](/mapbox-gl-js/api/map/). The `Map` object is the map on your page. It lets you access methods and properties for interacting with the map's style and layers, respond to events, and manipulate the user's perspective with the camera.
 * [**Properties and options**](/mapbox-gl-js/api/properties/). This section describes Mapbox GL JS's global properties and options that you might want to access while initializing your map or accessing information about its status.
 * [**Markers and controls**](/mapbox-gl-js/api/markers/). This section describes the user interface elements that you can add to your map. The items in this section exist outside of the map's `canvas` element.
 * [**Geography and geometry**](/mapbox-gl-js/api/geography/). This section includes general utilities and types that relate to working with and manipulating geographic information or geometries.
 * [**User interaction handlers**](/mapbox-gl-js/api/handlers/). The items in this section relate to the ways in which the map responds to user input.
-* [**Sources**](/mapbox-gl-js/api/sources/). This section describes the source types Mapbox GL JS can handle in addition to the ones described in the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/).
+* [**Sources**](/mapbox-gl-js/api/sources/). This section describes the source types Mapbox GL JS can handle besides the ones described in the [Mapbox Style Specification](https://docs.mapbox.com/mapbox-gl-js/style-spec/).
 * [**Events**](/mapbox-gl-js/api/events/). This section describes the different types of events that Mapbox GL JS can raise.
 
 Each section describes classes or objects as well as their **properties**, **parameters**, **instance members**, and associated **events**. Many sections also include inline code examples and related resources.
