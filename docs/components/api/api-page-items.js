@@ -9,7 +9,7 @@ import { toHtml } from '../../util/formatters';
 const apiFilterItems = require('../../util/api-filter-items.js');
 
 export default class ApiPageItems extends React.Component {
-    pageDocSource = apiFilterItems(this.props.pageTitle);
+    pageDocSource = apiFilterItems(this.props.name);
     children = this.pageDocSource[0].members.static;
     renderDescription = () => {
         const description = this.pageDocSource[0].description || false;
@@ -39,7 +39,7 @@ export default class ApiPageItems extends React.Component {
 }
 
 ApiPageItems.propTypes = {
-    pageTitle: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
     location: PropTypes.object.isRequired
 };
 
