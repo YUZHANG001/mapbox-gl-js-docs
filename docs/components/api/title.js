@@ -6,7 +6,9 @@ import classnames from 'classnames';
 export default class Title extends React.Component {
     render() {
         const { children, section, headingLevel } = this.props;
-        const id = slug(`${section ? section.name : ''} ${children}`);
+        const pageName =
+            section && section.name === 'Map class' ? 'Map' : section.name;
+        const id = slug(`${pageName || ''} ${children}`);
         const HeadingLevel = `h${headingLevel}`;
 
         return (
