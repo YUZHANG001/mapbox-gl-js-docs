@@ -1,7 +1,7 @@
 // the `pages` object maps hashes with their new pages
 // keys = new page name
 // values = array of hashes that belong to that page
-import findPage from './find-page';
+const { findPage } = require('./find-page');
 
 export default function redirect(location) {
     const preparedHash = location.hash ? location.hash.replace('#', '') : ''; // remove the first # sign

@@ -33,6 +33,7 @@
     "@sentry/browser": "^5.13.0",
     "babel-eslint": "^10.0.3",
     "documentation": "~12.1.0",
+    "downshift": "^5.4.2",
     "eslint": "^6.1.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-es": "^2.0.0",

@@ -1,4 +1,4 @@
-import findPage from '../find-page';
+const { findPage } = require('../find-page');
 
 it('findPage', () => {
     expect(findPage('Map#addLayer')).toBe('map');
