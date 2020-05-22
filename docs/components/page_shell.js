@@ -254,13 +254,7 @@ class PageShell extends React.Component {
                 <TopbarSticker unStickWidth={980}>
                     <div className="limiter">
                         <div className="grid">
-                            <div
-                                className={`col col--4-mm ${
-                                    sidebarProps.sidebarColSize
-                                        ? `col--${sidebarProps.sidebarColSize}-ml`
-                                        : ''
-                                } col--12`}
-                            >
+                            <div className="col col--4-mm col--12">
                                 <div className="ml24-mm pt12">
                                     <ProductMenu
                                         productName={topbarContent.productName}
@@ -268,14 +262,7 @@ class PageShell extends React.Component {
                                     />
                                 </div>
                             </div>
-                            <div
-                                className={`col col--7-mm ${
-                                    sidebarProps.sidebarColSize
-                                        ? `col--${11 -
-                                              sidebarProps.sidebarColSize}-ml`
-                                        : ''
-                                } col--12`}
-                            >
+                            <div className="col col--7-mm col--12">
                                 <div style={{ height: '50px' }}>
                                     {topbarContent.topNav}
                                 </div>
@@ -298,7 +285,6 @@ class PageShell extends React.Component {
                         sidebarContentStickyTop={60}
                         sidebarContentStickyTopNarrow={0}
                         currentPath={location.pathname}
-                        sideBarColSize={sidebarProps.sidebarColSize || 0}
                         sidebarStackedOnNarrowScreens={
                             sidebarProps.sidebarStackedOnNarrowScreens
                         }
