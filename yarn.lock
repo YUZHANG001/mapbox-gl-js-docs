@@ -2498,6 +2498,28 @@
     tabbable "^3.1.1"
     xtend "^4.0.0"
 
+"@mapbox/mr-ui@^0.9.1":
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/@mapbox/mr-ui/-/mr-ui-0.9.1.tgz#149d8d5492fbde630b74e62fd675570cd72e0655"
+  integrity sha512-3kaS57FPZA6yz5uxIxuL7reWgneq4NwC5m+9OugTHUqD656ijjk1+j5YhVL4bMYOFfFW01Nt+sq/yjGWnHWPcA==
+  dependencies:
+    "@mapbox/query-selector-contains-node" "^1.0.0"
+    classnames "^2.2.6"
+    clipboard "^2.0.0"
+    debounce "^1.1.0"
+    focus-trap "^3.0.0"
+    hoverintent "^2.0.0"
+    os-key "^1.0.0"
+    prefix "^1.0.0"
+    react-aria-modal "^4.0.0"
+    react-datepicker "^0.60.2"
+    react-displace "^2.3.0"
+    react-submittable "^2.0.0"
+    select "^1.1.2"
+    shallow-equal "^1.0.0"
+    tabbable "^3.1.1"
+    xtend "^4.0.0"
+
 "@mapbox/postcss-html-filter@^1.0.1":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@mapbox/postcss-html-filter/-/postcss-html-filter-1.0.1.tgz#25d8bcdb20c226d3a3a1d2a3dfc3c4021242e663"
