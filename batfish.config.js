@@ -87,7 +87,11 @@ module.exports = () => {
             }
         },
         devBrowserslist: false,
-        babelInclude: ['documentation', 'fuse.js'],
+        babelInclude: [
+            'documentation',
+            '@mapbox/mapbox-gl-style-spec',
+            'fuse.js'
+        ],
         webpackStaticIgnore: [/util\/util\.js$/]
     };
 

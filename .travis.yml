@@ -3,5 +3,4 @@ node_js:
   - 10
 
 before_script:
-  - yarn run install-spec-deps
   - yarn run build-api
