@@ -1,7 +1,7 @@
-import docs from '../components/api.json';
+const docs = require('../components/api.json');
 
 // returns the page name that the namespace appears on
-export default function findPage(namespace) {
+function findPage(namespace) {
     if (!namespace) return;
     namespace = namespace.toLowerCase();
     return docs.reduce((str, doc) => {
@@ -30,3 +30,7 @@ function scan(items, namespace, doc) {
         }, '');
     }
 }
+
+module.exports = {
+    findPage
+};

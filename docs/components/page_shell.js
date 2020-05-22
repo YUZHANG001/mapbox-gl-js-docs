@@ -24,6 +24,8 @@ import apiNavigation from '@mapbox/batfish/data/api-navigation'; // eslint-disab
 import { styleSpecNavigation } from '../data/style-spec-navigation';
 import redirectApiRef from '../util/api-ref-redirect';
 
+import ApiSearch from './api/search';
+
 const redirectStyleSpec = require('../util/style-spec-redirect');
 
 const slugger = new GithubSlugger();
@@ -96,6 +98,7 @@ class PageShell extends React.Component {
 
         const sidebarContent = (
             <div className="mx0-mm ml-neg24 mr-neg36 relative-mm absolute right left">
+                {slug === 'api' && <ApiSearch />}
                 <NavigationAccordion
                     currentPath={this.props.location.pathname}
                     contents={{
