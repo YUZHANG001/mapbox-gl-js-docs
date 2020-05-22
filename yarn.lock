@@ -5650,7 +5650,7 @@ core-js@^2.4.0, core-js@^2.5.0:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.5.tgz#44bc8d249e7fb2ff5d00e0341a7ffb94fbf67895"
   integrity sha512-klh/kDpwX8hryYL14M9w/xei6vrv6sE8gTHDG7/T/+SEovB/G4ejwcfE/CBzO6Edsu+OETZMZ3wcX/EjUkrl5A==
 
-core-js@^3.1.4, core-js@^3.4.1:
+core-js@^3.4.1:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.2.tgz#2799ea1a59050f0acf50dfe89b916d6503b16caa"
   integrity sha512-hIE5dXkRzRvnZ5vhkRfQxUvDxQZmD9oueA08jDYRBKJHx+VIl/Pne/e0A4x9LObEEthC/TqiZybUoNM4tRgnKg==
@@ -6925,11 +6925,6 @@ escope@^3.6.0:
     es6-weak-map "^2.0.1"
     esrecurse "^4.1.0"
     estraverse "^4.1.1"
-
-eslint-config-mourner@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-mourner/-/eslint-config-mourner-3.0.0.tgz#2cb7df3a14889e70409bbc3250ef0373285e7430"
-  integrity sha512-QWMt3Cbqkhg/73fZ2UrTNa/p27nF3JhI1Ej2Jg7qSBri88Y0bg4LFzz0/6I5IrvFR10c6UPwDS+DsV9Ec42aVQ==
 
 eslint-config-prettier@^6.10.0:
   version "6.10.0"
@@ -8735,22 +8730,6 @@ hast-util-to-html@^4.0.0:
     hast-util-whitespace "^1.0.0"
     html-void-elements "^1.0.0"
     property-information "^4.0.0"
-    space-separated-tokens "^1.0.0"
-    stringify-entities "^1.0.1"
-    unist-util-is "^2.0.0"
-    xtend "^4.0.1"
-
-hast-util-to-html@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/hast-util-to-html/-/hast-util-to-html-5.0.0.tgz#8b5c9710adb0689e3603f552f3104de2507aca35"
-  integrity sha512-vYbSEixfYD3CIqd1rN1Q4T0z0Tyodht0jNst940ESz9g7eaFc0FJADMkdVvlHqDsXVok0vji8FukrBfAH91BWQ==
-  dependencies:
-    ccount "^1.0.0"
-    comma-separated-tokens "^1.0.1"
-    hast-util-is-element "^1.0.0"
-    hast-util-whitespace "^1.0.0"
-    html-void-elements "^1.0.0"
-    property-information "^5.0.0"
     space-separated-tokens "^1.0.0"
     stringify-entities "^1.0.1"
     unist-util-is "^2.0.0"
@@ -13997,16 +13976,6 @@ remark-html@^8.0.0:
     hast-util-sanitize "^1.0.0"
     hast-util-to-html "^4.0.0"
     mdast-util-to-hast "^3.0.0"
-    xtend "^4.0.1"
-
-remark-html@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/remark-html/-/remark-html-9.0.0.tgz#0f3ef91e0e433f9ffc10aaa752655231f607b37f"
-  integrity sha512-dIO+tZj7XIBqz2UngJ57sGrtbM0dVvruD/R/lk/JQC5U0dSmCNO1liC1H2Cz537rT19EDmdbLxjIaYW2L7ctiQ==
-  dependencies:
-    hast-util-sanitize "^1.0.0"
-    hast-util-to-html "^5.0.0"
-    mdast-util-to-hast "^4.0.0"
     xtend "^4.0.1"
 
 remark-message-control@^4.1.1:
