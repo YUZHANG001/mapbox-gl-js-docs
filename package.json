@@ -10,6 +10,7 @@
     "node": ">=10"
   },
   "devDependencies": {
+    "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "@mapbox/appropriate-images": "^3.0.0",
