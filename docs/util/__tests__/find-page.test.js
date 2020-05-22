@@ -19,3 +19,7 @@ it('findPage', () => {
 it('findPage', () => {
     expect(findPage('PointLike')).toBe('geography');
 });
+
+it('findPage', () => {
+    expect(findPage('GeolocateControl.event:error')).toBe('markers');
+});

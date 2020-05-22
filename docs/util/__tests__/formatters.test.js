@@ -13,6 +13,13 @@ describe('formatters', () => {
         expect(formatters.autolink('Map')).toEqual(
             '<a href="/mapbox-gl-js/api/map/#map">Map</a>'
         );
+
+        expect(formatters.autolink('GeolocateControl.event:error')).toEqual(
+            '<a href="/mapbox-gl-js/api/markers/#geolocatecontrol.event:error">GeolocateControl.event:error</a>'
+        );
+        expect(formatters.autolink('Popup.event:close')).toEqual(
+            '<a href="/mapbox-gl-js/api/markers/#popup.event:close">Popup.event:close</a>'
+        );
     });
 
     it('parameters', () => {
